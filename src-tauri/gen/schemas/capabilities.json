@@ -1,0 +1,1 @@
+{"default":{"identifier":"default","description":"Permissões mínimas do Print 360 (core + notificação + diálogo)","local":true,"windows":["main"],"permissions":["core:default","notification:default","dialog:default"]}}

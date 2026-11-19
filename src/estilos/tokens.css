@@ -1,0 +1,74 @@
+/* ==========================================================================
+   Print 360 — Design System · Tokens
+   Aquino Consultoria
+   Fonte: 01_planejamento/design_system/design_system.md
+   ========================================================================== */
+
+:root {
+  /* Marcas */
+  --cor-primaria: #2563eb;
+  --cor-primaria-hover: #1d4ed8;
+  --cor-secundaria: #06b6d4;
+  --cor-secundaria-hover: #0891b2;
+
+  /* Semânticas */
+  --cor-sucesso: #10b981;
+  --cor-sucesso-fundo: #d1fae5;
+  --cor-sucesso-texto: #047857;
+  --cor-aviso: #f59e0b;
+  --cor-aviso-fundo: #fef3c7;
+  --cor-aviso-texto: #b45309;
+  --cor-perigo: #ef4444;
+  --cor-perigo-fundo: #fee2e2;
+  --cor-perigo-texto: #b91c1c;
+  --cor-info: #3b82f6;
+  --cor-info-fundo: #dbeafe;
+  --cor-info-texto: #1d4ed8;
+
+  /* Neutros */
+  --cor-fundo: #f1f5f9;
+  --cor-superficie: #ffffff;
+  --cor-superficie-alt: #f8fafc;
+  --cor-sidebar: #0f172a;
+  --cor-sidebar-hover: #1e293b;
+  --cor-texto: #0f172a;
+  --cor-texto-secundario: #475569;
+  --cor-texto-claro: #64748b;
+  --cor-borda: #e2e8f0;
+  --cor-borda-forte: #cbd5e1;
+
+  /* Tipografia */
+  --fonte-familia: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --fonte-3xl: 30px;
+  --fonte-2xl: 24px;
+  --fonte-xl: 18px;
+  --fonte-lg: 15px;
+  --fonte-md: 14px;
+  --fonte-sm: 12px;
+  --fonte-xs: 11px;
+
+  /* Espaçamento (base 4px) */
+  --esp-1: 4px;
+  --esp-2: 8px;
+  --esp-3: 12px;
+  --esp-4: 16px;
+  --esp-5: 20px;
+  --esp-6: 24px;
+  --esp-8: 32px;
+  --esp-10: 40px;
+  --esp-12: 48px;
+
+  /* Formas */
+  --raio-sm: 6px;
+  --raio-md: 10px;
+  --raio-lg: 14px;
+  --raio-pilula: 999px;
+
+  /* Elevação */
+  --sombra-card: 0 1px 3px rgba(15, 23, 42, 0.08), 0 1px 2px rgba(15, 23, 42, 0.04);
+  --sombra-elevada: 0 10px 25px rgba(15, 23, 42, 0.15);
+
+  /* Dimensões */
+  --largura-sidebar: 248px;
+  --altura-topbar: 72px;
+}

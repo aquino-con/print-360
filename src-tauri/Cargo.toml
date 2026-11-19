@@ -1,0 +1,32 @@
+[package]
+name = "print-360"
+version = "2.0.0"
+description = "Print 360 — Gerenciador de Impressoras · Aquino Consultoria"
+authors = ["Aquino Consultoria"]
+edition = "2021"
+rust-version = "1.77"
+
+[lib]
+name = "print_360_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-notification = "2"
+tauri-plugin-dialog = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+rusqlite = { version = "0.32", features = ["bundled"] }
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "time", "sync"] }
+chrono = { version = "0.4", features = ["serde"] }
+thiserror = "2"
+log = "0.4"
+dirs = "5"
+ureq = { version = "2", default-features = false, features = ["json", "tls"] }
+
+[features]
+default = ["custom-protocol"]
+custom-protocol = ["tauri/custom-protocol"]

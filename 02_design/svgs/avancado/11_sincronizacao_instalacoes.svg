@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900" font-family="Inter, system-ui, sans-serif">
+  <defs>
+    <filter id="sombra" x="-10%" y="-10%" width="120%" height="140%"><feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.08"/></filter>
+    <g id="ic-grid" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h7v7H3z M14 3h7v7h-7z M14 14h7v7h-7z M3 14h7v7H3z"/></g>
+    <g id="ic-list" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 6h13 M8 12h13 M8 18h13 M3 6h.01 M3 12h.01 M3 18h.01"/></g>
+    <g id="ic-printer" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6 M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2 M6 14h12v7H6z"/></g>
+    <g id="ic-package" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5 9 5 9-5z M3 8v8l9 5 9-5V8 M12 13v8"/></g>
+    <g id="ic-chart" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18 M6 17V9 M11 17V5 M16 17v-6 M21 17V8"/></g>
+    <g id="ic-users" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2 M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8 M23 21v-2a4 4 0 0 0-3-3.87 M16 3.13a4 4 0 0 1 0 7.75"/></g>
+    <g id="ic-gear" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z M19.4 15a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1.03 1.56V21a2 2 0 1 1-4 0v-.09A1.7 1.7 0 0 0 9 19.4a1.7 1.7 0 0 0-1.87.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-1.56-1.03H3a2 2 0 1 1 0-4h.09A1.7 1.7 0 0 0 4.6 9a1.7 1.7 0 0 0-.34-1.87l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.7 1.7 0 0 0 9 4.6h.09A1.7 1.7 0 0 0 10 3.09V3a2 2 0 1 1 4 0v.09A1.7 1.7 0 0 0 15 4.6a1.7 1.7 0 0 0 1.87-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.7 1.7 0 0 0 19.4 9v.09a1.7 1.7 0 0 0 1.56 1.03H21a2 2 0 1 1 0 4h-.09A1.7 1.7 0 0 0 19.4 15z"/></g>
+    <g id="ic-bell" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9 M13.7 21a2 2 0 0 1-3.4 0"/></g>
+    <g id="ic-search" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16z M21 21l-4.35-4.35"/></g>
+    <g id="ic-sparkles" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/></g>
+    <g id="ic-activity" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></g>
+    <g id="ic-network" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="16" y="16" width="6" height="6" rx="1"/><path d="M12 8v4 M5 16v-4h14v4"/></g>
+    <g id="ic-refresh" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 4v6h-6 M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></g>
+    <g id="ic-alert" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z M12 9v4 M12 17h.01"/></g>
+    <g id="ic-clock" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z M12 6v6l4 2"/></g>
+    <g id="ic-check" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></g>
+  </defs>
+  <style>
+    .ttl{font-size:24px;font-weight:700;fill:#0F172A}.sub{font-size:12px;fill:#475569}
+    .nav{font-size:13px;fill:#CBD5E1}.nava{font-size:13px;font-weight:600;fill:#FFFFFF}
+    .ct{font-size:14px;font-weight:600;fill:#0F172A}.kl{font-size:12px;fill:#475569}.ks{font-size:10px;fill:#64748B}
+    .kv{font-size:26px;font-weight:700;fill:#0F172A}.th{font-size:10px;font-weight:600;fill:#64748B;letter-spacing:.5px}
+    .tx{font-size:12px;fill:#334155}.txs{font-size:12px;font-weight:600;fill:#0F172A}.lk{font-size:11px;font-weight:600;fill:#2563EB}
+  </style>
+
+  <rect width="1440" height="900" fill="#F1F5F9"/>
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="248" height="900" fill="#0F172A"/>
+  <rect x="24" y="24" width="40" height="40" rx="10" fill="#2563EB"/>
+  <use href="#ic-printer" x="31" y="31" width="26" height="26" style="color:#FFFFFF"/>
+  <text x="76" y="42" font-size="17" font-weight="700" fill="#FFFFFF">Print 360</text>
+  <text x="76" y="58" font-size="9" fill="#94A3B8" letter-spacing="1.2">AQUINO CONSULTORIA</text>
+  <text x="24" y="126" font-size="10" fill="#94A3B8" letter-spacing="1.5">MENU PRINCIPAL</text>
+  <use href="#ic-grid" x="24" y="150" width="20" height="20" style="color:#94A3B8"/><text x="56" y="165" class="nav">Visão Geral</text>
+  <use href="#ic-list" x="24" y="194" width="20" height="20" style="color:#94A3B8"/><text x="56" y="209" class="nav">Fila de Impressão</text>
+  <circle cx="220" cy="204" r="11" fill="#B91C1C"/><text x="220" y="208" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+  <use href="#ic-printer" x="24" y="238" width="20" height="20" style="color:#94A3B8"/><text x="56" y="253" class="nav">Impressoras</text>
+  <use href="#ic-package" x="24" y="282" width="20" height="20" style="color:#94A3B8"/><text x="56" y="297" class="nav">Suprimentos</text>
+  <circle cx="220" cy="292" r="11" fill="#B45309"/><text x="220" y="296" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">5</text>
+  <use href="#ic-chart" x="24" y="326" width="20" height="20" style="color:#94A3B8"/><text x="56" y="341" class="nav">Relatórios</text>
+  <use href="#ic-users" x="24" y="370" width="20" height="20" style="color:#94A3B8"/><text x="56" y="385" class="nav">Usuários e Cotas</text>
+  <use href="#ic-gear" x="24" y="414" width="20" height="20" style="color:#94A3B8"/><text x="56" y="429" class="nav">Configurações</text>
+  <text x="24" y="470" font-size="10" fill="#A78BFA" letter-spacing="1.5">RECURSOS AVANÇADOS</text>
+  <use href="#ic-activity" x="24" y="492" width="20" height="20" style="color:#94A3B8"/><text x="56" y="507" class="nav">Manutenção Preditiva</text>
+  <use href="#ic-chart" x="24" y="536" width="20" height="20" style="color:#94A3B8"/><text x="56" y="551" class="nav">Roteamento</text>
+  <rect x="12" y="570" width="224" height="40" rx="8" fill="#1E293B"/>
+  <rect x="12" y="578" width="3" height="24" rx="1.5" fill="#7C3AED"/>
+  <use href="#ic-network" x="24" y="580" width="20" height="20" style="color:#C4B5FD"/>
+  <text x="56" y="595" class="nava">Sincronização</text>
+  <line x1="24" y1="800" x2="224" y2="800" stroke="#1E293B"/>
+  <circle cx="30" cy="824" r="5" fill="#10B981"/><text x="44" y="828" font-size="11" fill="#94A3B8">Sistema online</text>
+  <text x="24" y="852" font-size="10" fill="#94A3B8">v2.0.0-Aquino Consultoria</text>
+
+  <!-- Topbar -->
+  <rect x="248" y="0" width="1192" height="72" fill="#FFFFFF"/><line x1="248" y1="71" x2="1440" y2="71" stroke="#E2E8F0"/>
+  <text x="280" y="42" font-size="13" fill="#94A3B8">Painel / <tspan font-weight="600" fill="#0F172A">Sincronização</tspan></text>
+  <rect x="740" y="16" width="360" height="40" rx="8" fill="#F1F5F9" stroke="#E2E8F0"/>
+  <use href="#ic-search" x="756" y="26" width="18" height="18" style="color:#64748B"/>
+  <text x="784" y="41" font-size="12" fill="#64748B">Buscar impressoras, trabalhos, usuários...</text>
+  <use href="#ic-bell" x="1300" y="25" width="22" height="22" style="color:#475569"/>
+  <circle cx="1320" cy="27" r="4" fill="#DC2626" stroke="#FFFFFF" stroke-width="1.5"/>
+  <circle cx="1392" cy="36" r="18" fill="#DBEAFE"/><text x="1392" y="41" font-size="12" font-weight="700" fill="#1D4ED8" text-anchor="middle">AC</text>
+
+  <!-- Cabeçalho -->
+  <text x="280" y="124" class="ttl">Sincronização entre Instalações</text>
+  <text x="280" y="146" class="sub">Topologia, fila de mudanças e resolução de conflitos entre filiais</text>
+  <text x="870" y="126" font-size="12" font-weight="600" fill="#475569">Sincronização automática</text>
+  <rect x="1034" y="106" width="44" height="24" rx="12" fill="#CBD5E1"/><circle cx="1046" cy="118" r="9" fill="#FFFFFF"/>
+  <rect x="1100" y="104" width="160" height="36" rx="8" fill="#FFFFFF" stroke="#CBD5E1"/>
+  <use href="#ic-refresh" x="1114" y="114" width="15" height="15" style="color:#475569"/>
+  <text x="1138" y="127" font-size="11" font-weight="600" fill="#475569">Sincronizar agora</text>
+  <rect x="1272" y="104" width="128" height="36" rx="8" fill="#F5F3FF" stroke="#DDD6FE"/>
+  <use href="#ic-sparkles" x="1284" y="114" width="15" height="15" style="color:#7C3AED"/>
+  <text x="1308" y="127" font-size="11" font-weight="700" fill="#5B21B6">Recursos Avançados</text>
+
+  <!-- KPIs -->
+  <g filter="url(#sombra)">
+    <rect x="280" y="168" width="265" height="92" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <rect x="565" y="168" width="265" height="92" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <rect x="850" y="168" width="265" height="92" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <rect x="1135" y="168" width="265" height="92" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+  </g>
+  <rect x="300" y="184" width="34" height="34" rx="9" fill="#DBEAFE"/><use href="#ic-network" x="307" y="191" width="20" height="20" style="color:#2563EB"/>
+  <text x="346" y="195" class="kl">Instalações ativas</text><text x="300" y="239" class="kv">5</text>
+  <rect x="585" y="184" width="34" height="34" rx="9" fill="#FEF3C7"/><use href="#ic-clock" x="592" y="191" width="20" height="20" style="color:#B45309"/>
+  <text x="631" y="195" class="kl">Pendências no outbox</text><text x="585" y="239" class="kv">18</text>
+  <rect x="870" y="184" width="34" height="34" rx="9" fill="#FEE2E2"/><use href="#ic-alert" x="877" y="191" width="20" height="20" style="color:#DC2626"/>
+  <text x="913" y="195" class="kl">Conflitos pendentes</text><text x="870" y="239" class="kv">2</text>
+  <rect x="1155" y="184" width="34" height="34" rx="9" fill="#D1FAE5"/><use href="#ic-check" x="1162" y="191" width="20" height="20" style="color:#047857"/>
+  <text x="1201" y="195" class="kl">Último ciclo</text><text x="1155" y="239" class="kv" font-size="22">há 4 min</text>
+
+  <!-- Topologia -->
+  <g filter="url(#sombra)"><rect x="280" y="276" width="1120" height="340" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/></g>
+  <text x="304" y="304" class="ct">Topologia de instalações</text>
+  <text x="1376" y="304" font-size="10" fill="#64748B" text-anchor="end">Legenda:
+    <tspan fill="#047857">● sincronizado</tspan>
+    <tspan fill="#B45309">  ● pendente</tspan>
+    <tspan fill="#B91C1C">  ● conflito</tspan>
+    <tspan fill="#64748B">  ● offline</tspan>
+  </text>
+  <!-- conexões -->
+  <g stroke-width="2" fill="none">
+    <path d="M560 424 C700 424 700 372 820 372" stroke="#10B981"/>
+    <path d="M560 424 C740 424 900 372 1120 372" stroke="#F59E0B" stroke-dasharray="6 5"/>
+    <path d="M560 468 C700 468 700 528 820 528" stroke="#10B981"/>
+    <path d="M560 468 C740 468 900 528 1120 528" stroke="#DC2626" stroke-dasharray="6 5"/>
+  </g>
+  <!-- nó central -->
+  <rect x="320" y="386" width="240" height="120" rx="14" fill="#0F172A"/>
+  <use href="#ic-printer" x="340" y="404" width="22" height="22" style="color:#C4B5FD"/>
+  <text x="372" y="421" font-size="14" font-weight="700" fill="#FFFFFF">Matriz — São Paulo</text>
+  <rect x="340" y="432" width="116" height="20" rx="10" fill="#1E293B"/><text x="398" y="446" font-size="9" font-weight="700" fill="#C4B5FD" text-anchor="middle">ESTA INSTALAÇÃO</text>
+  <text x="340" y="474" font-size="10" fill="#94A3B8">21 impressoras · 64 usuários</text>
+  <text x="340" y="492" font-size="10" fill="#94A3B8">Origem dos dados locais</text>
+  <!-- nós remotos -->
+  <g>
+    <rect x="820" y="332" width="220" height="80" rx="12" fill="#FFFFFF" stroke="#10B981" stroke-width="2"/>
+    <circle cx="842" cy="354" r="5" fill="#10B981"/>
+    <text x="856" y="358" font-size="12" font-weight="700" fill="#0F172A">Filial Campinas</text>
+    <text x="840" y="380" font-size="10" fill="#475569">Sincronizado · 42 ms</text>
+    <text x="840" y="398" font-size="10" fill="#64748B">128 itens trocados</text>
+
+    <rect x="1120" y="332" width="220" height="80" rx="12" fill="#FFFFFF" stroke="#F59E0B" stroke-width="2"/>
+    <circle cx="1142" cy="354" r="5" fill="#F59E0B"/>
+    <text x="1156" y="358" font-size="12" font-weight="700" fill="#0F172A">Filial Rio de Janeiro</text>
+    <text x="1140" y="380" font-size="10" fill="#B45309">Pendente · 8 mudanças</text>
+    <text x="1140" y="398" font-size="10" fill="#64748B">último sync há 12 min</text>
+
+    <rect x="820" y="488" width="220" height="80" rx="12" fill="#FFFFFF" stroke="#10B981" stroke-width="2"/>
+    <circle cx="842" cy="510" r="5" fill="#10B981"/>
+    <text x="856" y="514" font-size="12" font-weight="700" fill="#0F172A">Filial Belo Horizonte</text>
+    <text x="840" y="536" font-size="10" fill="#475569">Sincronizado · 68 ms</text>
+    <text x="840" y="554" font-size="10" fill="#64748B">96 itens trocados</text>
+
+    <rect x="1120" y="488" width="220" height="80" rx="12" fill="#FFFFFF" stroke="#DC2626" stroke-width="2"/>
+    <circle cx="1142" cy="510" r="5" fill="#DC2626"/>
+    <text x="1156" y="514" font-size="12" font-weight="700" fill="#0F172A">Filial Curitiba</text>
+    <text x="1140" y="536" font-size="10" fill="#B91C1C">2 conflitos detectados</text>
+    <text x="1140" y="554" font-size="10" fill="#64748B">requer revisão manual</text>
+  </g>
+
+  <!-- Outbox -->
+  <g filter="url(#sombra)"><rect x="280" y="632" width="540" height="232" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/></g>
+  <text x="304" y="660" class="ct">Fila de mudanças (outbox)</text><text x="304" y="678" class="ks">18 pendentes · entidades permitidas: cotas, regras, alertas</text>
+  <g class="th">
+    <text x="304" y="706">ENTIDADE</text><text x="470" y="706">OPERAÇÃO</text><text x="590" y="706">VERSÃO</text><text x="680" y="706">DESTINO</text>
+  </g>
+  <g stroke="#F1F5F9"><line x1="304" y1="716" x2="800" y2="716"/><line x1="304" y1="754" x2="800" y2="754"/><line x1="304" y1="792" x2="800" y2="792"/></g>
+  <g font-size="11" fill="#334155">
+    <text x="304" y="738">cotas #12</text><text x="470" y="738">update</text><text x="590" y="738">v7</text><text x="680" y="738">Rio de Janeiro</text>
+    <text x="304" y="776">regras_roteamento #3</text><text x="470" y="776">insert</text><text x="590" y="776">v1</text><text x="680" y="776">Todas</text>
+    <text x="304" y="814">alertas #91</text><text x="470" y="814">update</text><text x="590" y="814">v4</text><text x="680" y="814">Campinas</text>
+    <text x="304" y="852" font-size="10" fill="#64748B">Documentos e dados de impressão nunca entram no outbox.</text>
+  </g>
+
+  <!-- Histórico -->
+  <g filter="url(#sombra)"><rect x="840" y="632" width="300" height="232" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/></g>
+  <text x="860" y="660" class="ct">Histórico de ciclos</text>
+  <g font-size="10" fill="#475569">
+    <rect x="860" y="674" width="260" height="34" rx="8" fill="#F0FDF4"/>
+    <circle cx="876" cy="691" r="4" fill="#10B981"/><text x="888" y="689" font-weight="600" fill="#047857">Sucesso · há 4 min</text><text x="888" y="702">112 itens · 1,8 s</text>
+
+    <rect x="860" y="716" width="260" height="34" rx="8" fill="#FFFBEB"/>
+    <circle cx="876" cy="733" r="4" fill="#F59E0B"/><text x="888" y="731" font-weight="600" fill="#B45309">Parcial · há 19 min</text><text x="888" y="744">8 itens · timeout parcial</text>
+
+    <rect x="860" y="758" width="260" height="34" rx="8" fill="#F0FDF4"/>
+    <circle cx="876" cy="775" r="4" fill="#10B981"/><text x="888" y="773" font-weight="600" fill="#047857">Sucesso · há 34 min</text><text x="888" y="786">96 itens · 1,2 s</text>
+  </g>
+
+  <!-- Conflitos -->
+  <g filter="url(#sombra)"><rect x="1160" y="632" width="240" height="232" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/></g>
+  <text x="1180" y="660" class="ct">Conflitos</text>
+  <rect x="1180" y="674" width="200" height="60" rx="10" fill="#FEF2F2" stroke="#FECACA"/>
+  <use href="#ic-alert" x="1192" y="686" width="16" height="16" style="color:#DC2626"/>
+  <text x="1216" y="698" font-size="11" font-weight="700" fill="#B91C1C">Cota #12</text>
+  <text x="1192" y="720" font-size="10" fill="#475569">local v6 × remota v7</text>
+  <rect x="1180" y="744" width="200" height="60" rx="10" fill="#FEF2F2" stroke="#FECACA"/>
+  <use href="#ic-alert" x="1192" y="756" width="16" height="16" style="color:#DC2626"/>
+  <text x="1216" y="768" font-size="11" font-weight="700" fill="#B91C1C">Regra #3</text>
+  <text x="1192" y="790" font-size="10" fill="#475569">prioridade divergente</text>
+  <rect x="1180" y="816" width="200" height="30" rx="8" fill="#DC2626"/>
+  <text x="1280" y="836" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">Revisar conflitos (2)</text>
+</svg>

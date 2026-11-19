@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900" font-family="Inter, system-ui, sans-serif">
+  <defs>
+    <filter id="sombra" x="-10%" y="-10%" width="120%" height="140%"><feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.08"/></filter>
+    <g id="ic-grid" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h7v7H3z M14 3h7v7h-7z M14 14h7v7h-7z M3 14h7v7H3z"/></g>
+    <g id="ic-list" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 6h13 M8 12h13 M8 18h13 M3 6h.01 M3 12h.01 M3 18h.01"/></g>
+    <g id="ic-printer" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6 M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2 M6 14h12v7H6z"/></g>
+    <g id="ic-package" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5 9 5 9-5z M3 8v8l9 5 9-5V8 M12 13v8"/></g>
+    <g id="ic-chart" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18 M6 17V9 M11 17V5 M16 17v-6 M21 17V8"/></g>
+    <g id="ic-users" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2 M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8 M23 21v-2a4 4 0 0 0-3-3.87 M16 3.13a4 4 0 0 1 0 7.75"/></g>
+    <g id="ic-gear" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z M19.4 15a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1.03 1.56V21a2 2 0 1 1-4 0v-.09A1.7 1.7 0 0 0 9 19.4a1.7 1.7 0 0 0-1.87.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-1.56-1.03H3a2 2 0 1 1 0-4h.09A1.7 1.7 0 0 0 4.6 9a1.7 1.7 0 0 0-.34-1.87l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.7 1.7 0 0 0 9 4.6h.09A1.7 1.7 0 0 0 10 3.09V3a2 2 0 1 1 4 0v.09A1.7 1.7 0 0 0 15 4.6a1.7 1.7 0 0 0 1.87-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.7 1.7 0 0 0 19.4 9v.09a1.7 1.7 0 0 0 1.56 1.03H21a2 2 0 1 1 0 4h-.09A1.7 1.7 0 0 0 19.4 15z"/></g>
+    <g id="ic-bell" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9 M13.7 21a2 2 0 0 1-3.4 0"/></g>
+    <g id="ic-search" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16z M21 21l-4.35-4.35"/></g>
+    <g id="ic-download" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4 M7 10l5 5 5-5 M12 15V3"/></g>
+    <g id="ic-chev" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></g>
+  </defs>
+  <style>
+    .ttl{font-size:24px;font-weight:700;fill:#0F172A}.sub{font-size:12px;fill:#64748B}
+    .nav{font-size:13px;fill:#CBD5E1}.nava{font-size:13px;font-weight:600;fill:#FFFFFF}
+    .ct{font-size:14px;font-weight:600;fill:#0F172A}.csub{font-size:11px;fill:#94A3B8}
+    .fl{font-size:11px;font-weight:600;fill:#334155}.fv{font-size:12px;fill:#0F172A}
+    .tl{font-size:12px;font-weight:600;fill:#0F172A}.td{font-size:10px;fill:#94A3B8}
+  </style>
+
+  <rect width="1440" height="900" fill="#F1F5F9"/>
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="248" height="900" fill="#0F172A"/>
+  <rect x="24" y="24" width="40" height="40" rx="10" fill="#2563EB"/>
+  <use href="#ic-printer" x="31" y="31" width="26" height="26" style="color:#FFFFFF"/>
+  <text x="76" y="42" font-size="17" font-weight="700" fill="#FFFFFF">Print 360</text>
+  <text x="76" y="58" font-size="9" fill="#94A3B8" letter-spacing="1.2">AQUINO CONSULTORIA</text>
+  <text x="24" y="126" font-size="10" fill="#475569" letter-spacing="1.5">MENU PRINCIPAL</text>
+  <use href="#ic-grid" x="24" y="150" width="20" height="20" style="color:#94A3B8"/><text x="56" y="165" class="nav">Visão Geral</text>
+  <use href="#ic-list" x="24" y="194" width="20" height="20" style="color:#94A3B8"/><text x="56" y="209" class="nav">Fila de Impressão</text>
+  <circle cx="220" cy="204" r="11" fill="#EF4444"/><text x="220" y="208" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+  <use href="#ic-printer" x="24" y="238" width="20" height="20" style="color:#94A3B8"/><text x="56" y="253" class="nav">Impressoras</text>
+  <use href="#ic-package" x="24" y="282" width="20" height="20" style="color:#94A3B8"/><text x="56" y="297" class="nav">Suprimentos</text>
+  <circle cx="220" cy="292" r="11" fill="#F59E0B"/><text x="220" y="296" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">5</text>
+  <use href="#ic-chart" x="24" y="326" width="20" height="20" style="color:#94A3B8"/><text x="56" y="341" class="nav">Relatórios</text>
+  <use href="#ic-users" x="24" y="370" width="20" height="20" style="color:#94A3B8"/><text x="56" y="385" class="nav">Usuários e Cotas</text>
+  <rect x="12" y="404" width="224" height="40" rx="8" fill="#1E293B"/>
+  <rect x="12" y="412" width="3" height="24" rx="1.5" fill="#06B6D4"/>
+  <use href="#ic-gear" x="24" y="414" width="20" height="20" style="color:#FFFFFF"/><text x="56" y="429" class="nava">Configurações</text>
+  <line x1="24" y1="800" x2="224" y2="800" stroke="#1E293B"/>
+  <circle cx="30" cy="824" r="5" fill="#10B981"/><text x="44" y="828" font-size="11" fill="#94A3B8">Sistema online</text>
+  <text x="24" y="852" font-size="10" fill="#475569">v1.0.0 · Aquino Consultoria</text>
+  <!-- Topbar -->
+  <rect x="248" y="0" width="1192" height="72" fill="#FFFFFF"/><line x1="248" y1="71" x2="1440" y2="71" stroke="#E2E8F0"/>
+  <text x="280" y="42" font-size="13" fill="#94A3B8">Painel / <tspan font-weight="600" fill="#0F172A">Configurações</tspan></text>
+  <rect x="740" y="16" width="360" height="40" rx="8" fill="#F1F5F9" stroke="#E2E8F0"/>
+  <use href="#ic-search" x="756" y="26" width="18" height="18" style="color:#94A3B8"/>
+  <text x="784" y="41" font-size="12" fill="#94A3B8">Buscar impressoras, trabalhos, usuários...</text>
+  <use href="#ic-bell" x="1300" y="25" width="22" height="22" style="color:#64748B"/>
+  <circle cx="1320" cy="27" r="4" fill="#EF4444" stroke="#FFFFFF" stroke-width="1.5"/>
+  <line x1="1344" y1="20" x2="1344" y2="52" stroke="#E2E8F0"/>
+  <circle cx="1392" cy="36" r="18" fill="#DBEAFE"/><text x="1392" y="41" font-size="12" font-weight="700" fill="#2563EB" text-anchor="middle">AC</text>
+  <!-- Cabeçalho -->
+  <text x="280" y="124" class="ttl">Configurações</text>
+  <text x="280" y="146" class="sub">Parâmetros e preferências do sistema</text>
+  <rect x="1240" y="104" width="160" height="36" rx="8" fill="#2563EB"/>
+  <text x="1320" y="127" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="middle">Salvar alterações</text>
+
+  <!-- Sub-menu -->
+  <g filter="url(#sombra)"><rect x="280" y="168" width="216" height="696" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/></g>
+  <text x="304" y="198" font-size="10" font-weight="600" fill="#94A3B8" letter-spacing="1">SEÇÕES</text>
+  <rect x="294" y="210" width="188" height="40" rx="8" fill="#EFF6FF"/>
+  <rect x="294" y="218" width="3" height="24" rx="1.5" fill="#2563EB"/>
+  <use href="#ic-gear" x="306" y="220" width="18" height="18" style="color:#2563EB"/>
+  <text x="334" y="235" font-size="12" font-weight="600" fill="#1D4ED8">Geral</text>
+  <use href="#ic-chart" x="306" y="264" width="18" height="18" style="color:#94A3B8"/><text x="334" y="279" font-size="12" fill="#475569">Custos</text>
+  <use href="#ic-bell" x="306" y="308" width="18" height="18" style="color:#94A3B8"/><text x="334" y="323" font-size="12" fill="#475569">Alertas</text>
+  <use href="#ic-printer" x="306" y="352" width="18" height="18" style="color:#94A3B8"/><text x="334" y="367" font-size="12" fill="#475569">Impressoras</text>
+  <use href="#ic-users" x="306" y="396" width="18" height="18" style="color:#94A3B8"/><text x="334" y="411" font-size="12" fill="#475569">Usuários e Permissões</text>
+  <use href="#ic-download" x="306" y="440" width="18" height="18" style="color:#94A3B8"/><text x="334" y="455" font-size="12" fill="#475569">Backup e Dados</text>
+  <line x1="304" y1="816" x2="472" y2="816" stroke="#E2E8F0"/>
+  <text x="304" y="840" font-size="10" fill="#94A3B8">Print 360 v1.0.0</text>
+
+  <!-- Seção: Preferências gerais -->
+  <g filter="url(#sombra)"><rect x="516" y="168" width="884" height="208" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/></g>
+  <text x="540" y="196" class="ct">Preferências gerais</text>
+  <text x="540" y="214" class="csub">Idioma, tema e comportamento da aplicação</text>
+  <text x="540" y="240" class="fl">Idioma</text>
+  <rect x="540" y="248" width="400" height="38" rx="8" fill="#FFFFFF" stroke="#CBD5E1"/>
+  <text x="554" y="272" class="fv">Português (Brasil)</text>
+  <use href="#ic-chev" x="912" y="261" width="14" height="14" style="color:#94A3B8"/>
+  <text x="980" y="240" class="fl">Tema</text>
+  <rect x="980" y="248" width="400" height="38" rx="8" fill="#FFFFFF" stroke="#CBD5E1"/>
+  <text x="994" y="272" class="fv">Claro</text>
+  <use href="#ic-chev" x="1352" y="261" width="14" height="14" style="color:#94A3B8"/>
+  <text x="540" y="312" class="fl">Formato de data</text>
+  <rect x="540" y="320" width="400" height="38" rx="8" fill="#FFFFFF" stroke="#CBD5E1"/>
+  <text x="554" y="344" class="fv">DD/MM/AAAA</text>
+  <use href="#ic-chev" x="912" y="333" width="14" height="14" style="color:#94A3B8"/>
+  <text x="980" y="330" class="tl">Atualizar status automaticamente</text>
+  <text x="980" y="346" class="td">A cada 15 segundos</text>
+  <rect x="1336" y="324" width="44" height="24" rx="12" fill="#2563EB"/>
+  <circle cx="1368" cy="336" r="9" fill="#FFFFFF"/>
+
+  <!-- Seção: Parâmetros de custo -->
+  <g filter="url(#sombra)"><rect x="516" y="392" width="884" height="208" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/></g>
+  <text x="540" y="420" class="ct">Parâmetros de custo</text>
+  <text x="540" y="438" class="csub">Valores usados no cálculo de custo por página</text>
+  <text x="540" y="464" class="fl">Custo por página (preto e branco)</text>
+  <rect x="540" y="472" width="400" height="38" rx="8" fill="#FFFFFF" stroke="#CBD5E1"/>
+  <text x="554" y="496" class="fv">R$ 0,25</text>
+  <text x="980" y="464" class="fl">Custo por página (colorida)</text>
+  <rect x="980" y="472" width="400" height="38" rx="8" fill="#FFFFFF" stroke="#CBD5E1"/>
+  <text x="994" y="496" class="fv">R$ 0,85</text>
+  <text x="540" y="534" class="fl">Moeda</text>
+  <rect x="540" y="542" width="400" height="38" rx="8" fill="#FFFFFF" stroke="#CBD5E1"/>
+  <text x="554" y="566" class="fv">Real (BRL)</text>
+  <use href="#ic-chev" x="912" y="555" width="14" height="14" style="color:#94A3B8"/>
+  <text x="980" y="534" class="fl">Margem de manutenção</text>
+  <rect x="980" y="542" width="400" height="38" rx="8" fill="#FFFFFF" stroke="#CBD5E1"/>
+  <text x="994" y="566" class="fv">10%</text>
+
+  <!-- Seção: Alertas -->
+  <g filter="url(#sombra)"><rect x="516" y="616" width="884" height="248" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/></g>
+  <text x="540" y="644" class="ct">Alertas e notificações</text>
+  <text x="540" y="662" class="csub">Escolha quais eventos geram avisos</text>
+  <text x="540" y="692" class="tl">Notificações do sistema</text>
+  <text x="540" y="708" class="td">Exibir avisos nativos do sistema operacional</text>
+  <rect x="1336" y="680" width="44" height="24" rx="12" fill="#2563EB"/>
+  <circle cx="1368" cy="692" r="9" fill="#FFFFFF"/>
+  <line x1="540" y1="722" x2="1376" y2="722" stroke="#F1F5F9"/>
+  <text x="540" y="748" class="tl">Alertas de suprimento baixo</text>
+  <text x="540" y="764" class="td">Avisar quando um item atingir o limite definido</text>
+  <rect x="1336" y="736" width="44" height="24" rx="12" fill="#2563EB"/>
+  <circle cx="1368" cy="748" r="9" fill="#FFFFFF"/>
+  <line x1="540" y1="778" x2="1376" y2="778" stroke="#F1F5F9"/>
+  <text x="540" y="802" class="fl">Limite de nível baixo</text>
+  <rect x="540" y="810" width="200" height="36" rx="8" fill="#FFFFFF" stroke="#CBD5E1"/>
+  <text x="554" y="833" class="fv">20%</text>
+  <text x="800" y="824" class="tl">Alertas de cota excedida</text>
+  <rect x="1336" y="812" width="44" height="24" rx="12" fill="#CBD5E1"/>
+  <circle cx="1348" cy="824" r="9" fill="#FFFFFF"/>
+</svg>

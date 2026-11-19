@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900" font-family="Inter, system-ui, sans-serif">
+  <defs>
+    <filter id="sombra" x="-10%" y="-10%" width="120%" height="140%"><feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.08"/></filter>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#DBEAFE" stop-opacity="0.9"/><stop offset="100%" stop-color="#DBEAFE" stop-opacity="0.05"/></linearGradient>
+    <g id="ic-grid" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h7v7H3z M14 3h7v7h-7z M14 14h7v7h-7z M3 14h7v7H3z"/></g>
+    <g id="ic-list" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 6h13 M8 12h13 M8 18h13 M3 6h.01 M3 12h.01 M3 18h.01"/></g>
+    <g id="ic-printer" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6 M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2 M6 14h12v7H6z"/></g>
+    <g id="ic-package" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5 9 5 9-5z M3 8v8l9 5 9-5V8 M12 13v8"/></g>
+    <g id="ic-chart" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18 M6 17V9 M11 17V5 M16 17v-6 M21 17V8"/></g>
+    <g id="ic-users" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2 M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8 M23 21v-2a4 4 0 0 0-3-3.87 M16 3.13a4 4 0 0 1 0 7.75"/></g>
+    <g id="ic-gear" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z M19.4 15a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1.03 1.56V21a2 2 0 1 1-4 0v-.09A1.7 1.7 0 0 0 9 19.4a1.7 1.7 0 0 0-1.87.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-1.56-1.03H3a2 2 0 1 1 0-4h.09A1.7 1.7 0 0 0 4.6 9a1.7 1.7 0 0 0-.34-1.87l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.7 1.7 0 0 0 9 4.6h.09A1.7 1.7 0 0 0 10 3.09V3a2 2 0 1 1 4 0v.09A1.7 1.7 0 0 0 15 4.6a1.7 1.7 0 0 0 1.87-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.7 1.7 0 0 0 19.4 9v.09a1.7 1.7 0 0 0 1.56 1.03H21a2 2 0 1 1 0 4h-.09A1.7 1.7 0 0 0 19.4 15z"/></g>
+    <g id="ic-bell" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9 M13.7 21a2 2 0 0 1-3.4 0"/></g>
+    <g id="ic-search" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16z M21 21l-4.35-4.35"/></g>
+    <g id="ic-download" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4 M7 10l5 5 5-5 M12 15V3"/></g>
+    <g id="ic-chev" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></g>
+  </defs>
+  <style>
+    .ttl{font-size:24px;font-weight:700;fill:#0F172A}.sub{font-size:12px;fill:#64748B}
+    .kl{font-size:12px;fill:#64748B}.ks{font-size:10px;fill:#94A3B8}.kv{font-size:24px;font-weight:700;fill:#0F172A}
+    .nav{font-size:13px;fill:#CBD5E1}.nava{font-size:13px;font-weight:600;fill:#FFFFFF}
+    .ct{font-size:14px;font-weight:600;fill:#0F172A}.th{font-size:10px;font-weight:600;fill:#64748B;letter-spacing:.5px}
+    .tx{font-size:12px;fill:#334155}.txs{font-size:12px;font-weight:600;fill:#0F172A}.mut{font-size:10px;fill:#94A3B8}
+  </style>
+
+  <rect width="1440" height="900" fill="#F1F5F9"/>
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="248" height="900" fill="#0F172A"/>
+  <rect x="24" y="24" width="40" height="40" rx="10" fill="#2563EB"/>
+  <use href="#ic-printer" x="31" y="31" width="26" height="26" style="color:#FFFFFF"/>
+  <text x="76" y="42" font-size="17" font-weight="700" fill="#FFFFFF">Print 360</text>
+  <text x="76" y="58" font-size="9" fill="#94A3B8" letter-spacing="1.2">AQUINO CONSULTORIA</text>
+  <text x="24" y="126" font-size="10" fill="#475569" letter-spacing="1.5">MENU PRINCIPAL</text>
+  <use href="#ic-grid" x="24" y="150" width="20" height="20" style="color:#94A3B8"/><text x="56" y="165" class="nav">Visão Geral</text>
+  <use href="#ic-list" x="24" y="194" width="20" height="20" style="color:#94A3B8"/><text x="56" y="209" class="nav">Fila de Impressão</text>
+  <circle cx="220" cy="204" r="11" fill="#EF4444"/><text x="220" y="208" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+  <use href="#ic-printer" x="24" y="238" width="20" height="20" style="color:#94A3B8"/><text x="56" y="253" class="nav">Impressoras</text>
+  <use href="#ic-package" x="24" y="282" width="20" height="20" style="color:#94A3B8"/><text x="56" y="297" class="nav">Suprimentos</text>
+  <circle cx="220" cy="292" r="11" fill="#F59E0B"/><text x="220" y="296" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">5</text>
+  <rect x="12" y="316" width="224" height="40" rx="8" fill="#1E293B"/>
+  <rect x="12" y="324" width="3" height="24" rx="1.5" fill="#06B6D4"/>
+  <use href="#ic-chart" x="24" y="326" width="20" height="20" style="color:#FFFFFF"/><text x="56" y="341" class="nava">Relatórios</text>
+  <use href="#ic-users" x="24" y="370" width="20" height="20" style="color:#94A3B8"/><text x="56" y="385" class="nav">Usuários e Cotas</text>
+  <use href="#ic-gear" x="24" y="414" width="20" height="20" style="color:#94A3B8"/><text x="56" y="429" class="nav">Configurações</text>
+  <line x1="24" y1="800" x2="224" y2="800" stroke="#1E293B"/>
+  <circle cx="30" cy="824" r="5" fill="#10B981"/><text x="44" y="828" font-size="11" fill="#94A3B8">Sistema online</text>
+  <text x="24" y="852" font-size="10" fill="#475569">v1.0.0 · Aquino Consultoria</text>
+  <!-- Topbar -->
+  <rect x="248" y="0" width="1192" height="72" fill="#FFFFFF"/><line x1="248" y1="71" x2="1440" y2="71" stroke="#E2E8F0"/>
+  <text x="280" y="42" font-size="13" fill="#94A3B8">Painel / <tspan font-weight="600" fill="#0F172A">Relatórios</tspan></text>
+  <rect x="740" y="16" width="360" height="40" rx="8" fill="#F1F5F9" stroke="#E2E8F0"/>
+  <use href="#ic-search" x="756" y="26" width="18" height="18" style="color:#94A3B8"/>
+  <text x="784" y="41" font-size="12" fill="#94A3B8">Buscar impressoras, trabalhos, usuários...</text>
+  <use href="#ic-bell" x="1300" y="25" width="22" height="22" style="color:#64748B"/>
+  <circle cx="1320" cy="27" r="4" fill="#EF4444" stroke="#FFFFFF" stroke-width="1.5"/>
+  <line x1="1344" y1="20" x2="1344" y2="52" stroke="#E2E8F0"/>
+  <circle cx="1392" cy="36" r="18" fill="#DBEAFE"/><text x="1392" y="41" font-size="12" font-weight="700" fill="#2563EB" text-anchor="middle">AC</text>
+  <!-- Cabeçalho -->
+  <text x="280" y="124" class="ttl">Relatórios</text>
+  <text x="280" y="146" class="sub">Análise de volume, custos e rateio por setor</text>
+  <rect x="1220" y="104" width="180" height="36" rx="8" fill="#2563EB"/>
+  <use href="#ic-download" x="1234" y="114" width="16" height="16" style="color:#FFFFFF"/>
+  <text x="1258" y="127" font-size="12" font-weight="600" fill="#FFFFFF">Exportar relatório</text>
+  <!-- Filtros -->
+  <g filter="url(#sombra)"><rect x="280" y="168" width="1120" height="60" rx="12" fill="#FFFFFF" stroke="#E2E8F0"/></g>
+  <rect x="296" y="182" width="300" height="32" rx="6" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="310" y="203" font-size="11" fill="#475569">Período: Últimos 12 meses</text>
+  <use href="#ic-chev" x="578" y="191" width="12" height="12" style="color:#94A3B8"/>
+  <rect x="608" y="182" width="260" height="32" rx="6" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="622" y="203" font-size="11" fill="#475569">Setor: Todos os setores</text>
+  <use href="#ic-chev" x="850" y="191" width="12" height="12" style="color:#94A3B8"/>
+  <rect x="888" y="182" width="160" height="32" rx="6" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="902" y="203" font-size="11" fill="#475569">Impressora: Todas</text>
+  <use href="#ic-chev" x="1030" y="191" width="12" height="12" style="color:#94A3B8"/>
+  <rect x="1220" y="182" width="164" height="32" rx="6" fill="#2563EB"/>
+  <text x="1302" y="203" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">Aplicar filtros</text>
+  <!-- KPIs -->
+  <g filter="url(#sombra)">
+    <rect x="280" y="244" width="265" height="92" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <rect x="565" y="244" width="265" height="92" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <rect x="850" y="244" width="265" height="92" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <rect x="1135" y="244" width="265" height="92" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+  </g>
+  <text x="300" y="270" class="kl">Custo total</text><text x="300" y="312" class="kv">R$ 46.210,80</text>
+  <text x="585" y="270" class="kl">Páginas impressas</text><text x="585" y="312" class="kv">148.320</text>
+  <text x="870" y="270" class="kl">Custo por página</text><text x="870" y="312" class="kv">R$ 0,31</text>
+  <text x="1155" y="270" class="kl">Economia vs. anterior</text><text x="1155" y="312" class="kv" fill="#10B981">-8,4%</text>
+  <!-- Gráfico de linha -->
+  <g filter="url(#sombra)"><rect x="280" y="352" width="720" height="280" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/></g>
+  <text x="304" y="384" class="ct">Evolução de custos</text>
+  <text x="304" y="402" class="ks">Custo mensal em R$ · últimos 12 meses</text>
+  <g stroke="#F1F5F9"><line x1="330" y1="420" x2="960" y2="420"/><line x1="330" y1="460" x2="960" y2="460"/><line x1="330" y1="500" x2="960" y2="500"/><line x1="330" y1="540" x2="960" y2="540"/><line x1="330" y1="580" x2="960" y2="580"/></g>
+  <g font-size="9" fill="#94A3B8" text-anchor="end"><text x="324" y="423">5k</text><text x="324" y="463">4k</text><text x="324" y="503">3k</text><text x="324" y="543">2k</text><text x="324" y="583">1k</text></g>
+  <path d="M345,478 400,465 455,481 510,452 565,458 620,446 675,455 730,439 785,449 840,462 895,468 950,474 950,580 345,580 Z" fill="url(#area)"/>
+  <polyline points="345,478 400,465 455,481 510,452 565,458 620,446 675,455 730,439 785,449 840,462 895,468 950,474" fill="none" stroke="#2563EB" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="950" cy="474" r="5" fill="#06B6D4" stroke="#FFFFFF" stroke-width="2"/>
+  <g font-size="9" fill="#94A3B8" text-anchor="middle"><text x="345" y="598">Jan</text><text x="400" y="598">Fev</text><text x="455" y="598">Mar</text><text x="510" y="598">Abr</text><text x="565" y="598">Mai</text><text x="620" y="598">Jun</text><text x="675" y="598">Jul</text><text x="730" y="598">Ago</text><text x="785" y="598">Set</text><text x="840" y="598">Out</text><text x="895" y="598">Nov</text><text x="950" y="598">Dez</text></g>
+  <!-- Rosca -->
+  <g filter="url(#sombra)"><rect x="1020" y="352" width="380" height="280" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/></g>
+  <text x="1044" y="384" class="ct">Rateio por setor</text>
+  <circle cx="1210" cy="486" r="66" fill="none" stroke="#E2E8F0" stroke-width="22"/>
+  <g transform="rotate(-90 1210 486)" fill="none" stroke-width="22">
+    <circle cx="1210" cy="486" r="66" stroke="#2563EB" stroke-dasharray="140.7 274.2" stroke-dashoffset="0"/>
+    <circle cx="1210" cy="486" r="66" stroke="#06B6D4" stroke-dasharray="99.5 315.4" stroke-dashoffset="-140.7"/>
+    <circle cx="1210" cy="486" r="66" stroke="#10B981" stroke-dasharray="78.9 336" stroke-dashoffset="-240.2"/>
+    <circle cx="1210" cy="486" r="66" stroke="#F59E0B" stroke-dasharray="54.0 360.9" stroke-dashoffset="-319.1"/>
+    <circle cx="1210" cy="486" r="66" stroke="#94A3B8" stroke-dasharray="41.4 373.5" stroke-dashoffset="-373.1"/>
+  </g>
+  <text x="1210" y="482" font-size="18" font-weight="700" fill="#0F172A" text-anchor="middle">R$ 46,2k</text>
+  <text x="1210" y="500" font-size="10" fill="#94A3B8" text-anchor="middle">total do período</text>
+  <g font-size="10" fill="#475569">
+    <rect x="1044" y="579" width="8" height="8" rx="2" fill="#2563EB"/><text x="1058" y="587">TI 34%</text>
+    <rect x="1160" y="579" width="8" height="8" rx="2" fill="#06B6D4"/><text x="1174" y="587">Financeiro 24%</text>
+    <rect x="1044" y="603" width="8" height="8" rx="2" fill="#10B981"/><text x="1058" y="611">Marketing 19%</text>
+    <rect x="1160" y="603" width="8" height="8" rx="2" fill="#F59E0B"/><text x="1174" y="611">RH 13%</text>
+    <rect x="1044" y="627" width="8" height="8" rx="2" fill="#94A3B8"/><text x="1058" y="635">Outros 10%</text>
+  </g>
+  <!-- Tabela de custo -->
+  <g filter="url(#sombra)"><rect x="280" y="648" width="1120" height="216" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/></g>
+  <text x="304" y="680" class="ct">Custo por impressora</text>
+  <line x1="304" y1="692" x2="1376" y2="692" stroke="#E2E8F0"/>
+  <text x="304" y="712" class="th">IMPRESSORA</text><text x="560" y="712" class="th">SETOR</text><text x="760" y="712" class="th">PÁGINAS</text><text x="900" y="712" class="th">CUSTO</text><text x="1080" y="712" class="th">VARIAÇÃO</text><text x="1210" y="712" class="th">PARTICIPAÇÃO</text>
+  <g stroke="#F1F5F9"><line x1="304" y1="736" x2="1376" y2="736"/><line x1="304" y1="774" x2="1376" y2="774"/><line x1="304" y1="812" x2="1376" y2="812"/></g>
+  <g>
+    <text x="304" y="758" class="txs">HP LaserJet Pro M404</text><text x="560" y="758" class="tx">Tecnologia</text><text x="760" y="758" class="tx">42.180</text><text x="900" y="758" class="tx">R$ 12.480,20</text>
+    <text x="1080" y="758" font-size="11" font-weight="600" fill="#059669">-4,2%</text>
+    <rect x="1210" y="752" width="120" height="7" rx="3.5" fill="#E2E8F0"/><rect x="1210" y="752" width="58" height="7" rx="3.5" fill="#2563EB"/><text x="1350" y="758" font-size="10" fill="#64748B" text-anchor="end">48%</text>
+
+    <text x="304" y="796" class="txs">Canon imageCLASS MF445</text><text x="560" y="796" class="tx">Financeiro</text><text x="760" y="796" class="tx">38.420</text><text x="900" y="796" class="tx">R$ 11.210,50</text>
+    <text x="1080" y="796" font-size="11" font-weight="600" fill="#DC2626">+2,1%</text>
+    <rect x="1210" y="790" width="120" height="7" rx="3.5" fill="#E2E8F0"/><rect x="1210" y="790" width="47" height="7" rx="3.5" fill="#06B6D4"/><text x="1350" y="796" font-size="10" fill="#64748B" text-anchor="end">39%</text>
+
+    <text x="304" y="834" class="txs">Epson L3210</text><text x="560" y="834" class="tx">Marketing</text><text x="760" y="834" class="tx">31.760</text><text x="900" y="834" class="tx">R$ 9.840,10</text>
+    <text x="1080" y="834" font-size="11" font-weight="600" fill="#059669">-6,8%</text>
+    <rect x="1210" y="828" width="120" height="7" rx="3.5" fill="#E2E8F0"/><rect x="1210" y="828" width="38" height="7" rx="3.5" fill="#10B981"/><text x="1350" y="834" font-size="10" fill="#64748B" text-anchor="end">32%</text>
+  </g>
+</svg>

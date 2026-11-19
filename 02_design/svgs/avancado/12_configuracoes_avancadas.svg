@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900" font-family="Inter, system-ui, sans-serif">
+  <defs>
+    <filter id="sombra" x="-10%" y="-10%" width="120%" height="140%"><feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.08"/></filter>
+    <g id="ic-grid" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h7v7H3z M14 3h7v7h-7z M14 14h7v7h-7z M3 14h7v7H3z"/></g>
+    <g id="ic-list" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 6h13 M8 12h13 M8 18h13 M3 6h.01 M3 12h.01 M3 18h.01"/></g>
+    <g id="ic-printer" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6 M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2 M6 14h12v7H6z"/></g>
+    <g id="ic-package" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5 9 5 9-5z M3 8v8l9 5 9-5V8 M12 13v8"/></g>
+    <g id="ic-chart" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18 M6 17V9 M11 17V5 M16 17v-6 M21 17V8"/></g>
+    <g id="ic-users" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2 M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8 M23 21v-2a4 4 0 0 0-3-3.87 M16 3.13a4 4 0 0 1 0 7.75"/></g>
+    <g id="ic-gear" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z M19.4 15a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1.03 1.56V21a2 2 0 1 1-4 0v-.09A1.7 1.7 0 0 0 9 19.4a1.7 1.7 0 0 0-1.87.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-1.56-1.03H3a2 2 0 1 1 0-4h.09A1.7 1.7 0 0 0 4.6 9a1.7 1.7 0 0 0-.34-1.87l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.7 1.7 0 0 0 9 4.6h.09A1.7 1.7 0 0 0 10 3.09V3a2 2 0 1 1 4 0v.09A1.7 1.7 0 0 0 15 4.6a1.7 1.7 0 0 0 1.87-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.7 1.7 0 0 0 19.4 9v.09a1.7 1.7 0 0 0 1.56 1.03H21a2 2 0 1 1 0 4h-.09A1.7 1.7 0 0 0 19.4 15z"/></g>
+    <g id="ic-bell" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9 M13.7 21a2 2 0 0 1-3.4 0"/></g>
+    <g id="ic-search" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16z M21 21l-4.35-4.35"/></g>
+    <g id="ic-sparkles" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/></g>
+    <g id="ic-activity" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></g>
+    <g id="ic-route" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="3"/><circle cx="18" cy="5" r="3"/><path d="M6 16V8a4 4 0 0 1 4-4h5 M16 8l2-3-2-3"/></g>
+    <g id="ic-network" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="16" y="16" width="6" height="6" rx="1"/><path d="M12 8v4 M5 16v-4h14v4"/></g>
+    <g id="ic-shield" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></g>
+    <g id="ic-chev" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></g>
+    <g id="ic-info" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z M12 16v-4 M12 8h.01"/></g>
+  </defs>
+  <style>
+    .ttl{font-size:24px;font-weight:700;fill:#0F172A}.sub{font-size:12px;fill:#475569}
+    .nav{font-size:13px;fill:#CBD5E1}.nava{font-size:13px;font-weight:600;fill:#FFFFFF}
+    .ct{font-size:14px;font-weight:600;fill:#0F172A}.ks{font-size:10px;fill:#64748B}
+    .fl{font-size:11px;font-weight:600;fill:#334155}.fv{font-size:12px;fill:#0F172A}
+    .tl{font-size:12px;font-weight:600;fill:#0F172A}.td{font-size:10px;fill:#64748B}
+  </style>
+
+  <rect width="1440" height="900" fill="#F1F5F9"/>
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="248" height="900" fill="#0F172A"/>
+  <rect x="24" y="24" width="40" height="40" rx="10" fill="#2563EB"/>
+  <use href="#ic-printer" x="31" y="31" width="26" height="26" style="color:#FFFFFF"/>
+  <text x="76" y="42" font-size="17" font-weight="700" fill="#FFFFFF">Print 360</text>
+  <text x="76" y="58" font-size="9" fill="#94A3B8" letter-spacing="1.2">AQUINO CONSULTORIA</text>
+  <text x="24" y="126" font-size="10" fill="#94A3B8" letter-spacing="1.5">MENU PRINCIPAL</text>
+  <use href="#ic-grid" x="24" y="150" width="20" height="20" style="color:#94A3B8"/><text x="56" y="165" class="nav">Visão Geral</text>
+  <use href="#ic-list" x="24" y="194" width="20" height="20" style="color:#94A3B8"/><text x="56" y="209" class="nav">Fila de Impressão</text>
+  <circle cx="220" cy="204" r="11" fill="#B91C1C"/><text x="220" y="208" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+  <use href="#ic-printer" x="24" y="238" width="20" height="20" style="color:#94A3B8"/><text x="56" y="253" class="nav">Impressoras</text>
+  <use href="#ic-package" x="24" y="282" width="20" height="20" style="color:#94A3B8"/><text x="56" y="297" class="nav">Suprimentos</text>
+  <circle cx="220" cy="292" r="11" fill="#B45309"/><text x="220" y="296" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">5</text>
+  <use href="#ic-chart" x="24" y="326" width="20" height="20" style="color:#94A3B8"/><text x="56" y="341" class="nav">Relatórios</text>
+  <use href="#ic-users" x="24" y="370" width="20" height="20" style="color:#94A3B8"/><text x="56" y="385" class="nav">Usuários e Cotas</text>
+  <use href="#ic-gear" x="24" y="414" width="20" height="20" style="color:#94A3B8"/><text x="56" y="429" class="nav">Configurações</text>
+  <text x="24" y="470" font-size="10" fill="#A78BFA" letter-spacing="1.5">RECURSOS AVANÇADOS</text>
+  <use href="#ic-activity" x="24" y="492" width="20" height="20" style="color:#94A3B8"/><text x="56" y="507" class="nav">Manutenção Preditiva</text>
+  <use href="#ic-route" x="24" y="536" width="20" height="20" style="color:#94A3B8"/><text x="56" y="551" class="nav">Roteamento</text>
+  <use href="#ic-network" x="24" y="580" width="20" height="20" style="color:#94A3B8"/><text x="56" y="595" class="nav">Sincronização</text>
+  <line x1="24" y1="800" x2="224" y2="800" stroke="#1E293B"/>
+  <circle cx="30" cy="824" r="5" fill="#10B981"/><text x="44" y="828" font-size="11" fill="#94A3B8">Sistema online</text>
+  <text x="24" y="852" font-size="10" fill="#94A3B8">v2.0.0-Aquino Consultoria</text>
+
+  <!-- Topbar -->
+  <rect x="248" y="0" width="1192" height="72" fill="#FFFFFF"/><line x1="248" y1="71" x2="1440" y2="71" stroke="#E2E8F0"/>
+  <text x="280" y="42" font-size="13" fill="#94A3B8">Configurações / <tspan font-weight="600" fill="#0F172A">Recursos Avançados</tspan></text>
+  <rect x="740" y="16" width="360" height="40" rx="8" fill="#F1F5F9" stroke="#E2E8F0"/>
+  <use href="#ic-search" x="756" y="26" width="18" height="18" style="color:#64748B"/>
+  <text x="784" y="41" font-size="12" fill="#64748B">Buscar impressoras, trabalhos, usuários...</text>
+  <use href="#ic-bell" x="1300" y="25" width="22" height="22" style="color:#475569"/>
+  <circle cx="1320" cy="27" r="4" fill="#DC2626" stroke="#FFFFFF" stroke-width="1.5"/>
+  <circle cx="1392" cy="36" r="18" fill="#DBEAFE"/><text x="1392" y="41" font-size="12" font-weight="700" fill="#1D4ED8" text-anchor="middle">AC</text>
+
+  <!-- Cabeçalho -->
+  <text x="280" y="124" class="ttl">Configurações dos recursos avançados</text>
+  <text x="280" y="146" class="sub">Habilite e calibre predição, roteamento e sincronização de forma incremental</text>
+  <rect x="1180" y="104" width="220" height="36" rx="8" fill="#2563EB"/>
+  <text x="1290" y="127" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="middle">Salvar alterações</text>
+
+  <!-- Submenu -->
+  <g filter="url(#sombra)"><rect x="280" y="168" width="216" height="696" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/></g>
+  <text x="304" y="196" font-size="10" font-weight="600" fill="#64748B" letter-spacing="1">MÓDULOS</text>
+  <g>
+    <rect x="294" y="208" width="188" height="40" rx="8" fill="#F5F3FF"/>
+    <rect x="294" y="216" width="3" height="24" rx="1.5" fill="#7C3AED"/>
+    <use href="#ic-shield" x="306" y="218" width="18" height="18" style="color:#7C3AED"/>
+    <text x="334" y="233" font-size="12" font-weight="600" fill="#5B21B6">Feature Flags</text>
+  </g>
+  <use href="#ic-activity" x="306" y="262" width="18" height="18" style="color:#94A3B8"/><text x="334" y="277" font-size="12" fill="#475569">Predição</text>
+  <use href="#ic-route" x="306" y="306" width="18" height="18" style="color:#94A3B8"/><text x="334" y="321" font-size="12" fill="#475569">Roteamento</text>
+  <use href="#ic-network" x="306" y="350" width="18" height="18" style="color:#94A3B8"/><text x="334" y="365" font-size="12" fill="#475569">Sincronização</text>
+  <line x1="304" y1="816" x2="472" y2="816" stroke="#E2E8F0"/>
+  <text x="304" y="840" font-size="10" fill="#64748B">Print 360 v2.0.0-beta</text>
+
+  <!-- Feature Flags -->
+  <g filter="url(#sombra)"><rect x="516" y="168" width="884" height="170" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/></g>
+  <text x="540" y="196" class="ct">Feature Flags</text>
+  <text x="540" y="214" class="ks">Nenhum módulo é ativado sem habilitação explícita · mudanças são auditadas</text>
+  <g>
+    <rect x="540" y="226" width="828" height="32" rx="8" fill="#F8FAFC"/>
+    <rect x="552" y="232" width="44" height="20" rx="10" fill="#2563EB"/><circle cx="580" cy="242" r="7" fill="#FFFFFF"/>
+    <text x="610" y="246" class="tl">Manutenção Preditiva</text><text x="610" y="258" class="td">health score, previsões e ordens de serviço</text>
+    <rect x="1260" y="232" width="88" height="20" rx="10" fill="#EDE9FE"/><text x="1304" y="246" font-size="9" font-weight="700" fill="#5B21B6" text-anchor="middle">BETA</text>
+  </g>
+  <g>
+    <rect x="540" y="264" width="828" height="32" rx="8" fill="#FFFFFF"/>
+    <rect x="552" y="270" width="44" height="20" rx="10" fill="#CBD5E1"/><circle cx="560" cy="280" r="7" fill="#FFFFFF"/>
+    <text x="610" y="284" class="tl">Roteamento automático</text><text x="610" y="296" class="td">regras, simulação e fallback</text>
+    <rect x="1260" y="270" width="88" height="20" rx="10" fill="#EDE9FE"/><text x="1304" y="284" font-size="9" font-weight="700" fill="#5B21B6" text-anchor="middle">BETA</text>
+  </g>
+  <g>
+    <rect x="540" y="302" width="828" height="28" rx="8" fill="#F8FAFC"/>
+    <rect x="552" y="306" width="44" height="20" rx="10" fill="#CBD5E1"/><circle cx="560" cy="316" r="7" fill="#FFFFFF"/>
+    <text x="610" y="320" class="tl">Sincronização entre instalações</text><text x="980" y="320" class="td">outbox, transporte e conflitos</text>
+    <rect x="1260" y="306" width="88" height="20" rx="10" fill="#EDE9FE"/><text x="1304" y="320" font-size="9" font-weight="700" fill="#5B21B6" text-anchor="middle">BETA</text>
+  </g>
+
+  <!-- Predição -->
+  <g filter="url(#sombra)"><rect x="516" y="354" width="884" height="180" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/></g>
+  <text x="540" y="382" class="ct">Predição</text><text x="540" y="400" class="ks">parâmetros do modelo heurístico · substituível por adaptador de ML</text>
+  <g>
+    <text x="540" y="428" class="fl">Horizonte padrão</text>
+    <rect x="540" y="436" width="240" height="36" rx="8" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="554" y="459" class="fv">30 dias</text><use href="#ic-chev" x="758" y="447" width="12" height="12" style="color:#64748B"/>
+    <text x="812" y="428" class="fl">Confiança mínima para recomendação</text>
+    <rect x="812" y="450" width="240" height="6" rx="3" fill="#E2E8F0"/><rect x="812" y="450" width="168" height="6" rx="3" fill="#7C3AED"/>
+    <circle cx="980" cy="453" r="8" fill="#7C3AED" stroke="#FFFFFF" stroke-width="2"/>
+    <text x="1068" y="456" font-size="12" font-weight="700" fill="#5B21B6">0,70</text>
+  </g>
+  <g>
+    <text x="540" y="498" class="fl">Pesos dos sinais</text>
+    <g font-size="10" fill="#475569">
+      <text x="540" y="520">Erros 30%</text><rect x="640" y="512" width="90" height="7" rx="3.5" fill="#E2E8F0"/><rect x="640" y="512" width="27" height="7" rx="3.5" fill="#DC2626"/>
+      <text x="760" y="520">Desgaste 25%</text><rect x="870" y="512" width="90" height="7" rx="3.5" fill="#E2E8F0"/><rect x="870" y="512" width="23" height="7" rx="3.5" fill="#F59E0B"/>
+      <text x="990" y="520">Volume 20%</text><rect x="1100" y="512" width="90" height="7" rx="3.5" fill="#E2E8F0"/><rect x="1100" y="512" width="18" height="7" rx="3.5" fill="#2563EB"/>
+    </g>
+  </g>
+
+  <!-- Roteamento -->
+  <g filter="url(#sombra)"><rect x="516" y="550" width="884" height="150" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/></g>
+  <text x="540" y="578" class="ct">Roteamento</text><text x="540" y="596" class="ks">critérios de escolha e segurança de ativação</text>
+  <text x="540" y="624" class="fl">Critério padrão</text>
+  <rect x="540" y="632" width="240" height="36" rx="8" fill="#FFFFFF" stroke="#CBD5E1"/>
+  <text x="554" y="655" class="fv">Disponibilidade</text><use href="#ic-chev" x="758" y="643" width="12" height="12" style="color:#64748B"/>
+  <text x="812" y="624" class="fl">Tentativas de fallback</text>
+  <rect x="812" y="632" width="120" height="36" rx="8" fill="#FFFFFF" stroke="#CBD5E1"/>
+  <text x="826" y="655" class="fv">2</text>
+  <g>
+    <rect x="964" y="624" width="436" height="44" rx="8" fill="#F5F3FF" stroke="#DDD6FE"/>
+    <rect x="976" y="634" width="40" height="22" rx="11" fill="#7C3AED"/><circle cx="1004" cy="645" r="8" fill="#FFFFFF"/>
+    <text x="1028" y="643" font-size="11" font-weight="700" fill="#5B21B6">Simulação obrigatória antes de ativar</text>
+    <text x="1028" y="657" font-size="10" fill="#5B21B6">Não pode ser desligado (RF2-017)</text>
+  </g>
+
+  <!-- Sincronização -->
+  <g filter="url(#sombra)"><rect x="516" y="716" width="884" height="148" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/></g>
+  <text x="540" y="744" class="ct">Sincronização</text><text x="540" y="762" class="ks">transporte, frequência, entidades e política de conflito</text>
+  <text x="540" y="790" class="fl">Transporte</text>
+  <rect x="540" y="798" width="200" height="34" rx="8" fill="#FFFFFF" stroke="#CBD5E1"/>
+  <text x="554" y="820" class="fv">Arquivo / LAN</text><use href="#ic-chev" x="718" y="809" width="12" height="12" style="color:#64748B"/>
+  <text x="770" y="790" class="fl">Intervalo (min)</text>
+  <rect x="770" y="798" width="100" height="34" rx="8" fill="#FFFFFF" stroke="#CBD5E1"/>
+  <text x="784" y="820" class="fv">15</text>
+  <text x="900" y="790" class="fl">Política de conflito</text>
+  <rect x="900" y="798" width="180" height="34" rx="8" fill="#FFFFFF" stroke="#CBD5E1"/>
+  <text x="914" y="820" class="fv">Manual</text><use href="#ic-chev" x="1058" y="809" width="12" height="12" style="color:#64748B"/>
+  <g font-size="10" fill="#475569">
+    <rect x="1112" y="800" width="14" height="14" rx="3" fill="#7C3AED"/><path d="M1115 807l2 2 4-4" stroke="#FFFFFF" stroke-width="1.6" fill="none"/><text x="1132" y="811">Cotas</text>
+    <rect x="1186" y="800" width="14" height="14" rx="3" fill="#7C3AED"/><path d="M1189 807l2 2 4-4" stroke="#FFFFFF" stroke-width="1.6" fill="none"/><text x="1206" y="811">Regras</text>
+    <rect x="1260" y="800" width="14" height="14" rx="3" fill="#FFFFFF" stroke="#CBD5E1"/><text x="1280" y="811" fill="#94A3B8">Documentos</text>
+  </g>
+  <use href="#ic-info" x="540" y="848" width="12" height="12" style="color:#64748B"/>
+  <text x="558" y="851" class="ks">Documentos nunca são sincronizados (RNF2-007)</text>
+</svg>

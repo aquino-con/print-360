@@ -1,0 +1,11 @@
+pub mod comandos_alertas;
+pub mod comandos_backup;
+pub mod comandos_config;
+pub mod comandos_fila;
+pub mod comandos_impressoras;
+pub mod comandos_predicao;
+pub mod comandos_relatorios;
+pub mod comandos_roteamento;
+pub mod comandos_sincronizacao;
+pub mod comandos_suprimentos;
+pub mod comandos_usuarios;

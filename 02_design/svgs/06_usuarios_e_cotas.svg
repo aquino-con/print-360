@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900" font-family="Inter, system-ui, sans-serif">
+  <defs>
+    <filter id="sombra" x="-10%" y="-10%" width="120%" height="140%"><feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.08"/></filter>
+    <g id="ic-grid" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h7v7H3z M14 3h7v7h-7z M14 14h7v7h-7z M3 14h7v7H3z"/></g>
+    <g id="ic-list" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 6h13 M8 12h13 M8 18h13 M3 6h.01 M3 12h.01 M3 18h.01"/></g>
+    <g id="ic-printer" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6 M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2 M6 14h12v7H6z"/></g>
+    <g id="ic-package" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5 9 5 9-5z M3 8v8l9 5 9-5V8 M12 13v8"/></g>
+    <g id="ic-chart" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18 M6 17V9 M11 17V5 M16 17v-6 M21 17V8"/></g>
+    <g id="ic-users" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2 M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8 M23 21v-2a4 4 0 0 0-3-3.87 M16 3.13a4 4 0 0 1 0 7.75"/></g>
+    <g id="ic-gear" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z M19.4 15a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1.03 1.56V21a2 2 0 1 1-4 0v-.09A1.7 1.7 0 0 0 9 19.4a1.7 1.7 0 0 0-1.87.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-1.56-1.03H3a2 2 0 1 1 0-4h.09A1.7 1.7 0 0 0 4.6 9a1.7 1.7 0 0 0-.34-1.87l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.7 1.7 0 0 0 9 4.6h.09A1.7 1.7 0 0 0 10 3.09V3a2 2 0 1 1 4 0v.09A1.7 1.7 0 0 0 15 4.6a1.7 1.7 0 0 0 1.87-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.7 1.7 0 0 0 19.4 9v.09a1.7 1.7 0 0 0 1.56 1.03H21a2 2 0 1 1 0 4h-.09A1.7 1.7 0 0 0 19.4 15z"/></g>
+    <g id="ic-bell" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9 M13.7 21a2 2 0 0 1-3.4 0"/></g>
+    <g id="ic-search" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16z M21 21l-4.35-4.35"/></g>
+    <g id="ic-plus" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14 M5 12h14"/></g>
+    <g id="ic-edit" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7 M18.5 2.5a2.12 2.12 0 0 1 3 3L12 15l-4 1 1-4z"/></g>
+    <g id="ic-more" fill="currentColor"><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/></g>
+  </defs>
+  <style>
+    .ttl{font-size:24px;font-weight:700;fill:#0F172A}.sub{font-size:12px;fill:#64748B}
+    .kl{font-size:12px;fill:#64748B}.kv{font-size:26px;font-weight:700;fill:#0F172A}
+    .nav{font-size:13px;fill:#CBD5E1}.nava{font-size:13px;font-weight:600;fill:#FFFFFF}
+    .th{font-size:10px;font-weight:600;fill:#64748B;letter-spacing:.5px}
+    .tx{font-size:12px;fill:#334155}.txs{font-size:12px;font-weight:600;fill:#0F172A}.mut{font-size:10px;fill:#94A3B8}
+  </style>
+
+  <rect width="1440" height="900" fill="#F1F5F9"/>
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="248" height="900" fill="#0F172A"/>
+  <rect x="24" y="24" width="40" height="40" rx="10" fill="#2563EB"/>
+  <use href="#ic-printer" x="31" y="31" width="26" height="26" style="color:#FFFFFF"/>
+  <text x="76" y="42" font-size="17" font-weight="700" fill="#FFFFFF">Print 360</text>
+  <text x="76" y="58" font-size="9" fill="#94A3B8" letter-spacing="1.2">AQUINO CONSULTORIA</text>
+  <text x="24" y="126" font-size="10" fill="#475569" letter-spacing="1.5">MENU PRINCIPAL</text>
+  <use href="#ic-grid" x="24" y="150" width="20" height="20" style="color:#94A3B8"/><text x="56" y="165" class="nav">Visão Geral</text>
+  <use href="#ic-list" x="24" y="194" width="20" height="20" style="color:#94A3B8"/><text x="56" y="209" class="nav">Fila de Impressão</text>
+  <circle cx="220" cy="204" r="11" fill="#EF4444"/><text x="220" y="208" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+  <use href="#ic-printer" x="24" y="238" width="20" height="20" style="color:#94A3B8"/><text x="56" y="253" class="nav">Impressoras</text>
+  <use href="#ic-package" x="24" y="282" width="20" height="20" style="color:#94A3B8"/><text x="56" y="297" class="nav">Suprimentos</text>
+  <circle cx="220" cy="292" r="11" fill="#F59E0B"/><text x="220" y="296" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">5</text>
+  <use href="#ic-chart" x="24" y="326" width="20" height="20" style="color:#94A3B8"/><text x="56" y="341" class="nav">Relatórios</text>
+  <rect x="12" y="360" width="224" height="40" rx="8" fill="#1E293B"/>
+  <rect x="12" y="368" width="3" height="24" rx="1.5" fill="#06B6D4"/>
+  <use href="#ic-users" x="24" y="370" width="20" height="20" style="color:#FFFFFF"/><text x="56" y="385" class="nava">Usuários e Cotas</text>
+  <use href="#ic-gear" x="24" y="414" width="20" height="20" style="color:#94A3B8"/><text x="56" y="429" class="nav">Configurações</text>
+  <line x1="24" y1="800" x2="224" y2="800" stroke="#1E293B"/>
+  <circle cx="30" cy="824" r="5" fill="#10B981"/><text x="44" y="828" font-size="11" fill="#94A3B8">Sistema online</text>
+  <text x="24" y="852" font-size="10" fill="#475569">v1.0.0 · Aquino Consultoria</text>
+  <!-- Topbar -->
+  <rect x="248" y="0" width="1192" height="72" fill="#FFFFFF"/><line x1="248" y1="71" x2="1440" y2="71" stroke="#E2E8F0"/>
+  <text x="280" y="42" font-size="13" fill="#94A3B8">Painel / <tspan font-weight="600" fill="#0F172A">Usuários e Cotas</tspan></text>
+  <rect x="740" y="16" width="360" height="40" rx="8" fill="#F1F5F9" stroke="#E2E8F0"/>
+  <use href="#ic-search" x="756" y="26" width="18" height="18" style="color:#94A3B8"/>
+  <text x="784" y="41" font-size="12" fill="#94A3B8">Buscar impressoras, trabalhos, usuários...</text>
+  <use href="#ic-bell" x="1300" y="25" width="22" height="22" style="color:#64748B"/>
+  <circle cx="1320" cy="27" r="4" fill="#EF4444" stroke="#FFFFFF" stroke-width="1.5"/>
+  <line x1="1344" y1="20" x2="1344" y2="52" stroke="#E2E8F0"/>
+  <circle cx="1392" cy="36" r="18" fill="#DBEAFE"/><text x="1392" y="41" font-size="12" font-weight="700" fill="#2563EB" text-anchor="middle">AC</text>
+  <!-- Cabeçalho -->
+  <text x="280" y="124" class="ttl">Usuários e Cotas</text>
+  <text x="280" y="146" class="sub">Controle de consumo e limites por usuário e setor</text>
+  <rect x="1252" y="104" width="148" height="36" rx="8" fill="#2563EB"/>
+  <use href="#ic-plus" x="1264" y="114" width="16" height="16" style="color:#FFFFFF"/>
+  <text x="1288" y="127" font-size="12" font-weight="600" fill="#FFFFFF">Novo usuário</text>
+  <!-- KPIs -->
+  <g filter="url(#sombra)">
+    <rect x="280" y="168" width="265" height="92" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <rect x="565" y="168" width="265" height="92" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <rect x="850" y="168" width="265" height="92" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <rect x="1135" y="168" width="265" height="92" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+  </g>
+  <rect x="300" y="184" width="34" height="34" rx="9" fill="#DBEAFE"/><use href="#ic-users" x="307" y="191" width="20" height="20" style="color:#2563EB"/>
+  <text x="346" y="195" class="kl">Usuários ativos</text><text x="300" y="239" class="kv">64</text>
+  <rect x="585" y="184" width="34" height="34" rx="9" fill="#D1FAE5"/><use href="#ic-users" x="592" y="191" width="20" height="20" style="color:#10B981"/>
+  <text x="631" y="195" class="kl">Cotas ativas</text><text x="585" y="239" class="kv">58</text>
+  <rect x="870" y="184" width="34" height="34" rx="9" fill="#FEE2E2"/><use href="#ic-users" x="877" y="191" width="20" height="20" style="color:#EF4444"/>
+  <text x="913" y="195" class="kl">Acima da cota</text><text x="870" y="239" class="kv">3</text>
+  <rect x="1155" y="184" width="34" height="34" rx="9" fill="#CFFAFE"/><use href="#ic-printer" x="1162" y="191" width="20" height="20" style="color:#0891B2"/>
+  <text x="1201" y="195" class="kl">Consumo médio</text><text x="1155" y="239" class="kv" font-size="22">2.340 pág.</text>
+
+  <!-- Tabela -->
+  <g filter="url(#sombra)"><rect x="280" y="276" width="1120" height="588" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/></g>
+  <path d="M280 288a12 12 0 0 1 12-12h1096a12 12 0 0 1 12 12v28H280z" fill="#F8FAFC"/>
+  <line x1="280" y1="316" x2="1400" y2="316" stroke="#E2E8F0"/>
+  <rect x="298" y="294" width="14" height="14" rx="3" fill="#FFFFFF" stroke="#CBD5E1"/>
+  <text x="328" y="304" class="th">USUÁRIO</text><text x="520" y="304" class="th">SETOR</text><text x="700" y="304" class="th">PERFIL</text><text x="850" y="304" class="th">CONSUMO</text><text x="950" y="304" class="th">USO DA COTA</text><text x="1140" y="304" class="th">STATUS</text><text x="1330" y="304" class="th">AÇÕES</text>
+
+  <g stroke="#F1F5F9">
+    <line x1="280" y1="364" x2="1400" y2="364"/><line x1="280" y1="412" x2="1400" y2="412"/>
+    <line x1="280" y1="460" x2="1400" y2="460"/><line x1="280" y1="508" x2="1400" y2="508"/>
+    <line x1="280" y1="556" x2="1400" y2="556"/><line x1="280" y1="604" x2="1400" y2="604"/>
+    <line x1="280" y1="652" x2="1400" y2="652"/><line x1="280" y1="700" x2="1400" y2="700"/>
+    <line x1="280" y1="748" x2="1400" y2="748"/><line x1="280" y1="796" x2="1400" y2="796"/>
+  </g>
+
+  <g>
+    <rect x="298" y="336" width="14" height="14" rx="3" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="328" y="342" class="txs">Ana Souza</text><text x="328" y="355" class="mut">ana.souza@empresa.com</text>
+    <text x="520" y="347" class="tx">Tecnologia</text>
+    <rect x="700" y="337" width="80" height="20" rx="10" fill="#DBEAFE"/><text x="740" y="351" font-size="9" font-weight="600" fill="#2563EB" text-anchor="middle">Admin</text>
+    <text x="850" y="347" class="tx">2.140 pág.</text>
+    <rect x="950" y="342" width="120" height="6" rx="3" fill="#E2E8F0"/><rect x="950" y="342" width="85" height="6" rx="3" fill="#10B981"/><text x="1078" y="347" class="mut">71%</text>
+    <rect x="1140" y="337" width="100" height="22" rx="11" fill="#D1FAE5"/><text x="1190" y="352" font-size="9" font-weight="600" fill="#059669" text-anchor="middle">Dentro da cota</text>
+    <use href="#ic-edit" x="1304" y="337" width="16" height="16" style="color:#94A3B8"/><use href="#ic-more" x="1336" y="337" width="16" height="16" style="color:#94A3B8"/>
+
+    <rect x="298" y="384" width="14" height="14" rx="3" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="328" y="390" class="txs">Carlos Lima</text><text x="328" y="403" class="mut">carlos.lima@empresa.com</text>
+    <text x="520" y="395" class="tx">Financeiro</text>
+    <rect x="700" y="385" width="80" height="20" rx="10" fill="#E0E7FF"/><text x="740" y="399" font-size="9" font-weight="600" fill="#4F46E5" text-anchor="middle">Gestor</text>
+    <text x="850" y="395" class="tx">2.860 pág.</text>
+    <rect x="950" y="390" width="120" height="6" rx="3" fill="#E2E8F0"/><rect x="950" y="390" width="114" height="6" rx="3" fill="#F59E0B"/><text x="1078" y="395" class="mut">95%</text>
+    <rect x="1140" y="385" width="100" height="22" rx="11" fill="#FEF3C7"/><text x="1190" y="400" font-size="9" font-weight="600" fill="#D97706" text-anchor="middle">Atenção</text>
+    <use href="#ic-edit" x="1304" y="385" width="16" height="16" style="color:#94A3B8"/><use href="#ic-more" x="1336" y="385" width="16" height="16" style="color:#94A3B8"/>
+
+    <rect x="298" y="432" width="14" height="14" rx="3" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="328" y="438" class="txs">Juliana Rocha</text><text x="328" y="451" class="mut">juliana.rocha@empresa.com</text>
+    <text x="520" y="443" class="tx">Marketing</text>
+    <rect x="700" y="433" width="80" height="20" rx="10" fill="#F1F5F9"/><text x="740" y="447" font-size="9" font-weight="600" fill="#64748B" text-anchor="middle">Usuário</text>
+    <text x="850" y="443" class="tx">1.420 pág.</text>
+    <rect x="950" y="438" width="120" height="6" rx="3" fill="#E2E8F0"/><rect x="950" y="438" width="85" height="6" rx="3" fill="#10B981"/><text x="1078" y="443" class="mut">71%</text>
+    <rect x="1140" y="433" width="100" height="22" rx="11" fill="#D1FAE5"/><text x="1190" y="448" font-size="9" font-weight="600" fill="#059669" text-anchor="middle">Dentro da cota</text>
+    <use href="#ic-edit" x="1304" y="433" width="16" height="16" style="color:#94A3B8"/><use href="#ic-more" x="1336" y="433" width="16" height="16" style="color:#94A3B8"/>
+
+    <rect x="298" y="480" width="14" height="14" rx="3" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="328" y="486" class="txs">Ricardo Alves</text><text x="328" y="499" class="mut">ricardo.alves@empresa.com</text>
+    <text x="520" y="491" class="tx">Recursos Humanos</text>
+    <rect x="700" y="481" width="80" height="20" rx="10" fill="#F1F5F9"/><text x="740" y="495" font-size="9" font-weight="600" fill="#64748B" text-anchor="middle">Usuário</text>
+    <text x="850" y="491" class="tx">2.340 pág.</text>
+    <rect x="950" y="486" width="120" height="6" rx="3" fill="#E2E8F0"/><rect x="950" y="486" width="120" height="6" rx="3" fill="#EF4444"/><text x="1078" y="491" font-size="10" font-weight="600" fill="#DC2626">117%</text>
+    <rect x="1140" y="481" width="100" height="22" rx="11" fill="#FEE2E2"/><text x="1190" y="496" font-size="9" font-weight="600" fill="#DC2626" text-anchor="middle">Acima da cota</text>
+    <use href="#ic-edit" x="1304" y="481" width="16" height="16" style="color:#94A3B8"/><use href="#ic-more" x="1336" y="481" width="16" height="16" style="color:#94A3B8"/>
+
+    <rect x="298" y="528" width="14" height="14" rx="3" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="328" y="534" class="txs">Marina Costa</text><text x="328" y="547" class="mut">marina.costa@empresa.com</text>
+    <text x="520" y="539" class="tx">Diretoria</text>
+    <rect x="700" y="529" width="80" height="20" rx="10" fill="#E0E7FF"/><text x="740" y="543" font-size="9" font-weight="600" fill="#4F46E5" text-anchor="middle">Gestor</text>
+    <text x="850" y="539" class="tx">980 pág.</text>
+    <rect x="950" y="534" width="120" height="6" rx="3" fill="#E2E8F0"/><rect x="950" y="534" width="78" height="6" rx="3" fill="#10B981"/><text x="1078" y="539" class="mut">65%</text>
+    <rect x="1140" y="529" width="100" height="22" rx="11" fill="#D1FAE5"/><text x="1190" y="544" font-size="9" font-weight="600" fill="#059669" text-anchor="middle">Dentro da cota</text>
+    <use href="#ic-edit" x="1304" y="529" width="16" height="16" style="color:#94A3B8"/><use href="#ic-more" x="1336" y="529" width="16" height="16" style="color:#94A3B8"/>
+
+    <rect x="298" y="576" width="14" height="14" rx="3" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="328" y="582" class="txs">Paulo Mendes</text><text x="328" y="595" class="mut">paulo.mendes@empresa.com</text>
+    <text x="520" y="587" class="tx">Tecnologia</text>
+    <rect x="700" y="577" width="80" height="20" rx="10" fill="#F1F5F9"/><text x="740" y="591" font-size="9" font-weight="600" fill="#64748B" text-anchor="middle">Usuário</text>
+    <text x="850" y="587" class="tx">3.120 pág.</text>
+    <rect x="950" y="582" width="120" height="6" rx="3" fill="#E2E8F0"/><rect x="950" y="582" width="120" height="6" rx="3" fill="#EF4444"/><text x="1078" y="587" font-size="10" font-weight="600" fill="#DC2626">104%</text>
+    <rect x="1140" y="577" width="100" height="22" rx="11" fill="#FEE2E2"/><text x="1190" y="592" font-size="9" font-weight="600" fill="#DC2626" text-anchor="middle">Acima da cota</text>
+    <use href="#ic-edit" x="1304" y="577" width="16" height="16" style="color:#94A3B8"/><use href="#ic-more" x="1336" y="577" width="16" height="16" style="color:#94A3B8"/>
+
+    <rect x="298" y="624" width="14" height="14" rx="3" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="328" y="630" class="txs">Fernanda Dias</text><text x="328" y="643" class="mut">fernanda.dias@empresa.com</text>
+    <text x="520" y="635" class="tx">Engenharia</text>
+    <rect x="700" y="625" width="80" height="20" rx="10" fill="#F1F5F9"/><text x="740" y="639" font-size="9" font-weight="600" fill="#64748B" text-anchor="middle">Usuário</text>
+    <text x="850" y="635" class="tx">1.760 pág.</text>
+    <rect x="950" y="630" width="120" height="6" rx="3" fill="#E2E8F0"/><rect x="950" y="630" width="84" height="6" rx="3" fill="#10B981"/><text x="1078" y="635" class="mut">70%</text>
+    <rect x="1140" y="625" width="100" height="22" rx="11" fill="#D1FAE5"/><text x="1190" y="640" font-size="9" font-weight="600" fill="#059669" text-anchor="middle">Dentro da cota</text>
+    <use href="#ic-edit" x="1304" y="625" width="16" height="16" style="color:#94A3B8"/><use href="#ic-more" x="1336" y="625" width="16" height="16" style="color:#94A3B8"/>
+
+    <rect x="298" y="672" width="14" height="14" rx="3" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="328" y="678" class="txs">Bruno Telles</text><text x="328" y="691" class="mut">bruno.telles@empresa.com</text>
+    <text x="520" y="683" class="tx">Marketing</text>
+    <rect x="700" y="673" width="80" height="20" rx="10" fill="#F1F5F9"/><text x="740" y="687" font-size="9" font-weight="600" fill="#64748B" text-anchor="middle">Usuário</text>
+    <text x="850" y="683" class="tx">2.180 pág.</text>
+    <rect x="950" y="678" width="120" height="6" rx="3" fill="#E2E8F0"/><rect x="950" y="678" width="120" height="6" rx="3" fill="#EF4444"/><text x="1078" y="683" font-size="10" font-weight="600" fill="#DC2626">109%</text>
+    <rect x="1140" y="673" width="100" height="22" rx="11" fill="#FEE2E2"/><text x="1190" y="688" font-size="9" font-weight="600" fill="#DC2626" text-anchor="middle">Acima da cota</text>
+    <use href="#ic-edit" x="1304" y="673" width="16" height="16" style="color:#94A3B8"/><use href="#ic-more" x="1336" y="673" width="16" height="16" style="color:#94A3B8"/>
+
+    <rect x="298" y="720" width="14" height="14" rx="3" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="328" y="726" class="txs">Camila Nunes</text><text x="328" y="739" class="mut">camila.nunes@empresa.com</text>
+    <text x="520" y="731" class="tx">Financeiro</text>
+    <rect x="700" y="721" width="80" height="20" rx="10" fill="#F1F5F9"/><text x="740" y="735" font-size="9" font-weight="600" fill="#64748B" text-anchor="middle">Usuário</text>
+    <text x="850" y="731" class="tx">640 pág.</text>
+    <rect x="950" y="726" width="120" height="6" rx="3" fill="#E2E8F0"/><rect x="950" y="726" width="64" height="6" rx="3" fill="#10B981"/><text x="1078" y="731" class="mut">53%</text>
+    <rect x="1140" y="721" width="100" height="22" rx="11" fill="#D1FAE5"/><text x="1190" y="736" font-size="9" font-weight="600" fill="#059669" text-anchor="middle">Dentro da cota</text>
+    <use href="#ic-edit" x="1304" y="721" width="16" height="16" style="color:#94A3B8"/><use href="#ic-more" x="1336" y="721" width="16" height="16" style="color:#94A3B8"/>
+
+    <rect x="298" y="768" width="14" height="14" rx="3" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="328" y="774" class="txs">Diego Martins</text><text x="328" y="787" class="mut">diego.martins@empresa.com</text>
+    <text x="520" y="779" class="tx">Engenharia</text>
+    <rect x="700" y="769" width="80" height="20" rx="10" fill="#F1F5F9"/><text x="740" y="783" font-size="9" font-weight="600" fill="#64748B" text-anchor="middle">Usuário</text>
+    <text x="850" y="779" class="tx">0 pág.</text>
+    <rect x="950" y="774" width="120" height="6" rx="3" fill="#E2E8F0"/><text x="1078" y="779" class="mut">—</text>
+    <rect x="1140" y="769" width="100" height="22" rx="11" fill="#F1F5F9"/><text x="1190" y="784" font-size="9" font-weight="600" fill="#64748B" text-anchor="middle">Sem cota</text>
+    <use href="#ic-edit" x="1304" y="769" width="16" height="16" style="color:#94A3B8"/><use href="#ic-more" x="1336" y="769" width="16" height="16" style="color:#94A3B8"/>
+  </g>
+  <line x1="280" y1="816" x2="1400" y2="816" stroke="#E2E8F0"/>
+  <text x="300" y="846" font-size="11" fill="#64748B">Mostrando <tspan font-weight="600" fill="#0F172A">10</tspan> de 64 usuários</text>
+  <rect x="1200" y="828" width="90" height="30" rx="6" fill="#FFFFFF" stroke="#CBD5E1"/><text x="1245" y="848" font-size="11" font-weight="600" fill="#475569" text-anchor="middle">Anterior</text>
+  <rect x="1300" y="828" width="90" height="30" rx="6" fill="#2563EB"/><text x="1345" y="848" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">Próxima</text>
+</svg>

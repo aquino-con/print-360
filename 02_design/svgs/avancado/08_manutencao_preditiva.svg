@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900" font-family="Inter, system-ui, sans-serif">
+  <defs>
+    <filter id="sombra" x="-10%" y="-10%" width="120%" height="140%"><feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.08"/></filter>
+    <g id="ic-grid" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h7v7H3z M14 3h7v7h-7z M14 14h7v7h-7z M3 14h7v7H3z"/></g>
+    <g id="ic-list" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 6h13 M8 12h13 M8 18h13 M3 6h.01 M3 12h.01 M3 18h.01"/></g>
+    <g id="ic-printer" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6 M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2 M6 14h12v7H6z"/></g>
+    <g id="ic-package" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5 9 5 9-5z M3 8v8l9 5 9-5V8 M12 13v8"/></g>
+    <g id="ic-chart" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18 M6 17V9 M11 17V5 M16 17v-6 M21 17V8"/></g>
+    <g id="ic-users" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2 M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8 M23 21v-2a4 4 0 0 0-3-3.87 M16 3.13a4 4 0 0 1 0 7.75"/></g>
+    <g id="ic-gear" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z M19.4 15a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1.03 1.56V21a2 2 0 1 1-4 0v-.09A1.7 1.7 0 0 0 9 19.4a1.7 1.7 0 0 0-1.87.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-1.56-1.03H3a2 2 0 1 1 0-4h.09A1.7 1.7 0 0 0 4.6 9a1.7 1.7 0 0 0-.34-1.87l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.7 1.7 0 0 0 9 4.6h.09A1.7 1.7 0 0 0 10 3.09V3a2 2 0 1 1 4 0v.09A1.7 1.7 0 0 0 15 4.6a1.7 1.7 0 0 0 1.87-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.7 1.7 0 0 0 19.4 9v.09a1.7 1.7 0 0 0 1.56 1.03H21a2 2 0 1 1 0 4h-.09A1.7 1.7 0 0 0 19.4 15z"/></g>
+    <g id="ic-bell" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9 M13.7 21a2 2 0 0 1-3.4 0"/></g>
+    <g id="ic-search" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16z M21 21l-4.35-4.35"/></g>
+    <g id="ic-sparkles" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z M19 17l.7 1.8 1.8.7-1.8.7L19 22l-.7-1.8-1.8-.7 1.8-.7z"/></g>
+    <g id="ic-activity" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></g>
+    <g id="ic-wrench" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-3 3-3-3z"/></g>
+    <g id="ic-calendar" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h18v16H3z M3 9h18 M8 3v4 M16 3v4"/></g>
+    <g id="ic-chev" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></g>
+    <g id="ic-info" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z M12 16v-4 M12 8h.01"/></g>
+  </defs>
+  <style>
+    .ttl{font-size:24px;font-weight:700;fill:#0F172A}.sub{font-size:12px;fill:#475569}
+    .nav{font-size:13px;fill:#CBD5E1}.nava{font-size:13px;font-weight:600;fill:#FFFFFF}
+    .ct{font-size:14px;font-weight:600;fill:#0F172A}.kl{font-size:12px;fill:#475569}.ks{font-size:10px;fill:#64748B}
+    .kv{font-size:26px;font-weight:700;fill:#0F172A}.th{font-size:10px;font-weight:600;fill:#64748B;letter-spacing:.5px}
+    .tx{font-size:12px;fill:#334155}.txs{font-size:12px;font-weight:600;fill:#0F172A}.lk{font-size:11px;font-weight:600;fill:#2563EB}
+    .beta{font-size:9px;font-weight:700;fill:#5B21B6}
+  </style>
+
+  <rect width="1440" height="900" fill="#F1F5F9"/>
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="248" height="900" fill="#0F172A"/>
+  <rect x="24" y="24" width="40" height="40" rx="10" fill="#2563EB"/>
+  <use href="#ic-printer" x="31" y="31" width="26" height="26" style="color:#FFFFFF"/>
+  <text x="76" y="42" font-size="17" font-weight="700" fill="#FFFFFF">Print 360</text>
+  <text x="76" y="58" font-size="9" fill="#94A3B8" letter-spacing="1.2">AQUINO CONSULTORIA</text>
+  <text x="24" y="126" font-size="10" fill="#94A3B8" letter-spacing="1.5">MENU PRINCIPAL</text>
+  <use href="#ic-grid" x="24" y="150" width="20" height="20" style="color:#94A3B8"/><text x="56" y="165" class="nav">Visão Geral</text>
+  <use href="#ic-list" x="24" y="194" width="20" height="20" style="color:#94A3B8"/><text x="56" y="209" class="nav">Fila de Impressão</text>
+  <circle cx="220" cy="204" r="11" fill="#B91C1C"/><text x="220" y="208" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+  <use href="#ic-printer" x="24" y="238" width="20" height="20" style="color:#94A3B8"/><text x="56" y="253" class="nav">Impressoras</text>
+  <use href="#ic-package" x="24" y="282" width="20" height="20" style="color:#94A3B8"/><text x="56" y="297" class="nav">Suprimentos</text>
+  <circle cx="220" cy="292" r="11" fill="#B45309"/><text x="220" y="296" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">5</text>
+  <use href="#ic-chart" x="24" y="326" width="20" height="20" style="color:#94A3B8"/><text x="56" y="341" class="nav">Relatórios</text>
+  <use href="#ic-users" x="24" y="370" width="20" height="20" style="color:#94A3B8"/><text x="56" y="385" class="nav">Usuários e Cotas</text>
+  <use href="#ic-gear" x="24" y="414" width="20" height="20" style="color:#94A3B8"/><text x="56" y="429" class="nav">Configurações</text>
+
+  <text x="24" y="470" font-size="10" fill="#A78BFA" letter-spacing="1.5">RECURSOS AVANÇADOS</text>
+  <rect x="12" y="482" width="224" height="40" rx="8" fill="#1E293B"/>
+  <rect x="12" y="490" width="3" height="24" rx="1.5" fill="#7C3AED"/>
+  <use href="#ic-activity" x="24" y="492" width="20" height="20" style="color:#C4B5FD"/>
+  <text x="56" y="507" class="nava">Manutenção Preditiva</text>
+  <use href="#ic-chart" x="24" y="536" width="20" height="20" style="color:#94A3B8"/><text x="56" y="551" class="nav">Roteamento</text>
+  <use href="#ic-package" x="24" y="580" width="20" height="20" style="color:#94A3B8"/><text x="56" y="595" class="nav">Sincronização</text>
+
+  <line x1="24" y1="800" x2="224" y2="800" stroke="#1E293B"/>
+  <circle cx="30" cy="824" r="5" fill="#10B981"/><text x="44" y="828" font-size="11" fill="#94A3B8">Sistema online</text>
+  <text x="24" y="852" font-size="10" fill="#94A3B8">v2.0.0-Aquino Consultoria</text>
+
+  <!-- Topbar -->
+  <rect x="248" y="0" width="1192" height="72" fill="#FFFFFF"/><line x1="248" y1="71" x2="1440" y2="71" stroke="#E2E8F0"/>
+  <text x="280" y="42" font-size="13" fill="#94A3B8">Painel / <tspan font-weight="600" fill="#0F172A">Manutenção Preditiva</tspan></text>
+  <rect x="740" y="16" width="360" height="40" rx="8" fill="#F1F5F9" stroke="#E2E8F0"/>
+  <use href="#ic-search" x="756" y="26" width="18" height="18" style="color:#64748B"/>
+  <text x="784" y="41" font-size="12" fill="#64748B">Buscar impressoras, trabalhos, usuários...</text>
+  <use href="#ic-bell" x="1300" y="25" width="22" height="22" style="color:#475569"/>
+  <circle cx="1320" cy="27" r="4" fill="#DC2626" stroke="#FFFFFF" stroke-width="1.5"/>
+  <circle cx="1392" cy="36" r="18" fill="#DBEAFE"/><text x="1392" y="41" font-size="12" font-weight="700" fill="#1D4ED8" text-anchor="middle">AC</text>
+
+  <!-- Cabeçalho -->
+  <text x="280" y="124" class="ttl">Manutenção Preditiva</text>
+  <text x="280" y="146" class="sub">Antecipe falhas com base em sinais da frota · estimativas com fatores e confiança</text>
+  <rect x="1252" y="104" width="148" height="36" rx="8" fill="#F5F3FF" stroke="#DDD6FE"/>
+  <use href="#ic-sparkles" x="1264" y="114" width="16" height="16" style="color:#7C3AED"/>
+  <text x="1288" y="127" font-size="12" font-weight="700" fill="#5B21B6">Recursos Avançados</text>
+  <g font-size="11" font-weight="600">
+    <rect x="976" y="104" width="56" height="36" rx="8" fill="#2563EB"/><text x="1004" y="127" fill="#FFFFFF" text-anchor="middle">7d</text>
+    <rect x="1036" y="104" width="56" height="36" rx="8" fill="#FFFFFF" stroke="#CBD5E1"/><text x="1064" y="127" fill="#475569" text-anchor="middle">30d</text>
+    <rect x="1096" y="104" width="56" height="36" rx="8" fill="#FFFFFF" stroke="#CBD5E1"/><text x="1124" y="127" fill="#475569" text-anchor="middle">90d</text>
+  </g>
+
+  <!-- KPIs -->
+  <g filter="url(#sombra)">
+    <rect x="280" y="168" width="265" height="92" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <rect x="565" y="168" width="265" height="92" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <rect x="850" y="168" width="265" height="92" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <rect x="1135" y="168" width="265" height="92" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+  </g>
+  <rect x="300" y="184" width="34" height="34" rx="9" fill="#DBEAFE"/><use href="#ic-activity" x="307" y="191" width="20" height="20" style="color:#2563EB"/>
+  <text x="346" y="195" class="kl">Saúde média da frota</text><text x="300" y="239" class="kv">78<tspan font-size="15" fill="#64748B">/100</tspan></text>
+  <rect x="585" y="184" width="34" height="34" rx="9" fill="#FEF3C7"/><use href="#ic-info" x="592" y="191" width="20" height="20" style="color:#B45309"/>
+  <text x="631" y="195" class="kl">Em atenção</text><text x="585" y="239" class="kv">4</text>
+  <rect x="870" y="184" width="34" height="34" rx="9" fill="#FEE2E2"/><use href="#ic-wrench" x="877" y="191" width="20" height="20" style="color:#DC2626"/>
+  <text x="913" y="195" class="kl">Falhas previstas (30d)</text><text x="870" y="239" class="kv">7</text>
+  <rect x="1155" y="184" width="34" height="34" rx="9" fill="#D1FAE5"/><use href="#ic-calendar" x="1162" y="191" width="20" height="20" style="color:#047857"/>
+  <text x="1201" y="195" class="kl">Ordens abertas</text><text x="1155" y="239" class="kv">3</text>
+
+  <!-- Gauge -->
+  <g filter="url(#sombra)"><rect x="280" y="276" width="440" height="292" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/></g>
+  <text x="304" y="304" class="ct">Saúde da frota</text><text x="304" y="322" class="ks">Média ponderada · 21 dispositivos</text>
+  <circle cx="500" cy="432" r="82" fill="none" stroke="#E2E8F0" stroke-width="16"/>
+  <circle cx="500" cy="432" r="82" fill="none" stroke="#2563EB" stroke-width="16" stroke-linecap="round"
+          stroke-dasharray="402 514" transform="rotate(-90 500 432)"/>
+  <text x="500" y="426" font-size="42" font-weight="700" fill="#0F172A" text-anchor="middle">78</text>
+  <text x="500" y="450" font-size="12" fill="#64748B" text-anchor="middle">de 100</text>
+  <rect x="462" y="470" width="76" height="24" rx="12" fill="#DBEAFE"/><text x="500" y="486" font-size="11" font-weight="700" fill="#1D4ED8" text-anchor="middle">Bom</text>
+  <text x="304" y="548" class="ks">Confiança do modelo</text>
+  <rect x="304" y="556" width="180" height="6" rx="3" fill="#E2E8F0"/><rect x="304" y="556" width="144" height="6" rx="3" fill="#10B981"/>
+  <text x="496" y="562" font-size="10" font-weight="600" fill="#047857">Alta · 80%</text>
+
+  <!-- Risco por impressora -->
+  <g filter="url(#sombra)"><rect x="740" y="276" width="400" height="292" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/></g>
+  <text x="764" y="304" class="ct">Risco por impressora</text><text x="764" y="322" class="ks">Maior risco primeiro · horizonte 7 dias</text>
+  <line x1="764" y1="460" x2="1116" y2="460" stroke="#FEE2E2" stroke-width="1" stroke-dasharray="4 4"/>
+  <g font-size="10" fill="#475569">
+    <text x="764" y="356">Brother MFC-L2710</text><rect x="764" y="362" width="240" height="9" rx="4.5" fill="#E2E8F0"/><rect x="764" y="362" width="216" height="9" rx="4.5" fill="#DC2626"/><text x="1116" y="370" text-anchor="end" fill="#B91C1C" font-weight="700">90%</text>
+    <text x="764" y="394">Epson L3210</text><rect x="764" y="400" width="240" height="9" rx="4.5" fill="#E2E8F0"/><rect x="764" y="400" width="158" height="9" rx="4.5" fill="#F59E0B"/><text x="1116" y="408" text-anchor="end" fill="#B45309" font-weight="700">66%</text>
+    <text x="764" y="432">Xerox VersaLink C405</text><rect x="764" y="438" width="240" height="9" rx="4.5" fill="#E2E8F0"/><rect x="764" y="438" width="120" height="9" rx="4.5" fill="#F59E0B"/><text x="1116" y="446" text-anchor="end" fill="#B45309" font-weight="700">50%</text>
+    <text x="764" y="490">Canon MF445</text><rect x="764" y="496" width="240" height="9" rx="4.5" fill="#E2E8F0"/><rect x="764" y="496" width="58" height="9" rx="4.5" fill="#2563EB"/><text x="1116" y="504" text-anchor="end" fill="#1D4ED8" font-weight="700">24%</text>
+    <text x="764" y="528">HP LaserJet M404</text><rect x="764" y="534" width="240" height="9" rx="4.5" fill="#E2E8F0"/><rect x="764" y="534" width="36" height="9" rx="4.5" fill="#10B981"/><text x="1116" y="542" text-anchor="end" fill="#047857" font-weight="700">15%</text>
+  </g>
+  <text x="1116" y="460" font-size="9" fill="#DC2626" text-anchor="end" transform="translate(0,-4)">limiar 60%</text>
+
+  <!-- Próximas manutenções -->
+  <g filter="url(#sombra)"><rect x="1160" y="276" width="240" height="292" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/></g>
+  <text x="1180" y="304" class="ct">Próximas manutenções</text><text x="1180" y="322" class="ks">linha do tempo</text>
+  <g stroke="#E2E8F0" stroke-width="2"><line x1="1192" y1="352" x2="1192" y2="536"/></g>
+  <g>
+    <circle cx="1192" cy="368" r="6" fill="#DC2626"/><text x="1208" y="366" font-size="10" font-weight="600" fill="#0F172A">Troca de tambor</text><text x="1208" y="380" font-size="9" fill="#64748B">Brother · em 3 dias</text>
+    <circle cx="1192" cy="420" r="6" fill="#F59E0B"/><text x="1208" y="418" font-size="10" font-weight="600" fill="#0F172A">Revisão de bandeja</text><text x="1208" y="432" font-size="9" fill="#64748B">Epson · em 9 dias</text>
+    <circle cx="1192" cy="472" r="6" fill="#2563EB"/><text x="1208" y="470" font-size="10" font-weight="600" fill="#0F172A">Limpeza de fusor</text><text x="1208" y="484" font-size="9" fill="#64748B">Xerox · em 21 dias</text>
+    <circle cx="1192" cy="524" r="6" fill="#94A3B8"/><text x="1208" y="522" font-size="10" font-weight="600" fill="#0F172A">Checagem geral</text><text x="1208" y="536" font-size="9" fill="#64748B">Canon · em 45 dias</text>
+  </g>
+
+  <!-- Recomendações -->
+  <g filter="url(#sombra)"><rect x="280" y="584" width="1120" height="280" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/></g>
+  <text x="304" y="612" class="ct">Recomendações priorizadas</text><text x="304" y="630" class="ks">Ordenadas por risco × custo · clique em "Por quê?" para ver os fatores</text>
+  <g fill="#F8FAFC"><rect x="280" y="640" width="1120" height="32" rx="0"/></g>
+  <g class="th">
+    <text x="304" y="660">IMPRESSORA</text><text x="560" y="660">COMPONENTE</text><text x="760" y="660">PRAZO</text>
+    <text x="860" y="660">PROBABILIDADE</text><text x="1010" y="660">CONFIANÇA</text><text x="1160" y="660">FATORES / AÇÃO</text>
+  </g>
+  <g stroke="#F1F5F9"><line x1="304" y1="688" x2="1376" y2="688"/><line x1="304" y1="732" x2="1376" y2="732"/><line x1="304" y1="776" x2="1376" y2="776"/><line x1="304" y1="820" x2="1376" y2="820"/></g>
+  <g font-size="12" fill="#334155">
+    <text x="304" y="712" font-weight="600" fill="#0F172A">Brother MFC-L2710</text><text x="560" y="712">Tambor</text><text x="760" y="712" fill="#B91C1C" font-weight="700">3 dias</text><text x="860" y="712">87%</text>
+    <rect x="1010" y="702" width="70" height="20" rx="10" fill="#D1FAE5"/><text x="1045" y="716" font-size="10" font-weight="700" fill="#047857" text-anchor="middle">alta</text>
+    <text x="1160" y="712" class="lk">Por quê?</text><rect x="1300" y="698" width="76" height="26" rx="6" fill="#2563EB"/><text x="1338" y="716" font-size="10" font-weight="600" fill="#FFFFFF" text-anchor="middle">Criar OS</text>
+
+    <text x="304" y="756" font-weight="600" fill="#0F172A">Epson L3210</text><text x="560" y="756">Toner preto</text><text x="760" y="756" fill="#B45309" font-weight="700">9 dias</text><text x="860" y="756">72%</text>
+    <rect x="1010" y="746" width="70" height="20" rx="10" fill="#FEF3C7"/><text x="1045" y="760" font-size="10" font-weight="700" fill="#B45309" text-anchor="middle">média</text>
+    <text x="1160" y="756" class="lk">Por quê?</text><rect x="1300" y="742" width="76" height="26" rx="6" fill="#FFFFFF" stroke="#CBD5E1"/><text x="1338" y="760" font-size="10" font-weight="600" fill="#475569" text-anchor="middle">OS criada</text>
+
+    <text x="304" y="800" font-weight="600" fill="#0F172A">Xerox VersaLink C405</text><text x="560" y="800">Fusor</text><text x="760" y="800" fill="#B45309" font-weight="700">21 dias</text><text x="860" y="800">64%</text>
+    <rect x="1010" y="790" width="70" height="20" rx="10" fill="#FEF3C7"/><text x="1045" y="804" font-size="10" font-weight="700" fill="#B45309" text-anchor="middle">média</text>
+    <text x="1160" y="800" class="lk">Por quê?</text><rect x="1300" y="786" width="76" height="26" rx="6" fill="#2563EB"/><text x="1338" y="804" font-size="10" font-weight="600" fill="#FFFFFF" text-anchor="middle">Criar OS</text>
+
+    <text x="304" y="844" font-weight="600" fill="#0F172A">Canon imageCLASS MF445</text><text x="560" y="844">Bandeja 2</text><text x="760" y="844" fill="#1D4ED8" font-weight="700">45 dias</text><text x="860" y="844">41%</text>
+    <rect x="1010" y="834" width="70" height="20" rx="10" fill="#F1F5F9"/><text x="1045" y="848" font-size="10" font-weight="700" fill="#475569" text-anchor="middle">baixa</text>
+    <text x="1160" y="844" class="lk">Por quê?</text><rect x="1300" y="830" width="76" height="26" rx="6" fill="#FFFFFF" stroke="#CBD5E1"/><text x="1338" y="848" font-size="10" font-weight="600" fill="#475569" text-anchor="middle">Observar</text>
+  </g>
+</svg>

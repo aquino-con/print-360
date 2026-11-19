@@ -1,0 +1,195 @@
+print_360/
+├── README.md
+├── package.json
+├── package-lock.json
+├── vite.config.ts
+├── tsconfig.json
+├── index.html
+├── .gitignore
+│
+├── 01_planejamento/
+│   ├── visao_produto/
+│   │   └── visao_geral.md
+│   ├── requisitos/
+│   │   ├── requisitos_funcionais.md
+│   │   └── requisitos_nao_funcionais.md
+│   ├── arquitetura/
+│   │   ├── arquitetura_sistema.md
+│   │   └── modelo_dados.md
+│   ├── design_spec/
+│   │   └── design_spec.md
+│   └── design_system/
+│       └── design_system.md
+├── 02_design/
+│   ├── svgs/
+│   │   ├── 01_visao_geral.svg
+│   │   ├── 02_fila_de_impressao.svg
+│   │   ├── 03_impressoras.svg
+│   │   ├── 04_suprimentos.svg
+│   │   ├── 05_relatorios.svg
+│   │   ├── 06_usuarios_e_cotas.svg
+│   │   ├── 07_configuracoes.svg
+│   │   └── avancado/                  ← 5 telas de alta fidelidade dos recursos avançados
+│   │       ├── 08_manutencao_preditiva.svg
+│   │       ├── 09_saude_do_dispositivo.svg
+│   │       ├── 10_roteamento_inteligente.svg
+│   │       ├── 11_sincronizacao_instalacoes.svg
+│   │       └── 12_configuracoes_avancadas.svg
+│   └── referencias/
+├── 03_estrutura_projeto/
+│   ├── estrutura_projeto.md
+│   └── arvore_projeto.txt
+├── 04_documentacao/
+│   └── roadmap.md
+├── 05_avancado/                       ← especificação dos recursos avançados (entregues)
+│   ├── visao_produto/
+│   │   └── visao_geral_avancado.md
+│   ├── requisitos/
+│   │   ├── requisitos_funcionais_avancado.md
+│   │   └── requisitos_nao_funcionais_avancado.md
+│   ├── arquitetura/
+│   │   ├── arquitetura_avancado.md
+│   │   └── modelo_dados_avancado.md
+│   ├── design_spec/
+│   │   └── design_spec_avancado.md
+│   ├── design_system/
+│   │   └── design_system_avancado.md
+│   └── roadmap_avancado.md
+│
+├── src-tauri/
+│   ├── Cargo.toml
+│   ├── Cargo.lock
+│   ├── build.rs
+│   ├── tauri.conf.json
+│   ├── capabilities/
+│   │   └── default.json
+│   ├── icons/
+│   │   ├── icon.png
+│   │   ├── icon.ico
+│   │   ├── icon.icns
+│   │   ├── 32x32.png
+│   │   ├── 128x128.png
+│   │   ├── 128x128@2x.png
+│   │   └── gerar_icones.py
+│   ├── migrations/
+│   │   ├── 0001_inicial.sql
+│   │   ├── 0002_integracao_spooler.sql
+│   │   ├── 0003_suprimentos_custos.sql
+│   │   ├── 0004_predicao.sql          ← recursos avançados / M1
+│   │   ├── 0005_roteamento.sql        ← recursos avançados / M2
+│   │   └── 0006_sincronizacao.sql     ← recursos avançados / M3
+│   └── src/
+│       ├── main.rs
+│       ├── lib.rs
+│       ├── erro.rs
+│       ├── estado.rs
+│       ├── comandos/
+│       │   ├── mod.rs
+│       │   ├── comandos_impressoras.rs
+│       │   ├── comandos_fila.rs
+│       │   ├── comandos_relatorios.rs
+│       │   ├── comandos_suprimentos.rs
+│       │   ├── comandos_usuarios.rs
+│       │   ├── comandos_alertas.rs
+│       │   ├── comandos_backup.rs
+│       │   ├── comandos_predicao.rs
+│       │   ├── comandos_roteamento.rs
+│       │   ├── comandos_sincronizacao.rs
+│       │   └── comandos_config.rs
+│       ├── servicos/
+│       │   ├── mod.rs
+│       │   ├── servico_relatorios.rs
+│       │   ├── servico_suprimentos.rs
+│       │   ├── servico_custos.rs
+│       │   ├── servico_usuarios.rs
+│       │   ├── servico_alertas.rs
+│       │   ├── servico_atividade.rs
+│       │   └── servico_auditoria.rs
+│       ├── roteamento/                ← recursos avançados / M2
+│       │   ├── mod.rs
+│       │   ├── regra.rs
+│       │   ├── motor.rs
+│       │   └── servico.rs
+│       ├── sincronizacao/             ← recursos avançados / M3
+│       │   ├── mod.rs
+│       │   ├── modelo.rs
+│       │   ├── outbox.rs
+│       │   ├── transporte.rs
+│       │   └── servico.rs
+│       ├── repositorio/
+│       │   ├── mod.rs
+│       │   ├── conexao.rs
+│       │   └── migrations.rs
+│       ├── integracao/
+│       │   ├── mod.rs
+│       │   ├── spooler.rs
+│       │   ├── spooler_windows.rs
+│       │   ├── spooler_cups.rs
+│       │   ├── coletor.rs
+│       │   └── util.rs
+│       ├── predicao/                  ← recursos avançados / M1
+│       │   ├── mod.rs
+│       │   ├── modelo.rs
+│       │   ├── sinais.rs
+│       │   └── servico.rs
+│       ├── modelos/
+│       │   └── mod.rs
+│       └── util/
+│           ├── mod.rs
+│           ├── datas.rs
+│           └── validacao.rs
+│
+├── src/
+│   ├── main.tsx
+│   ├── App.tsx
+│   ├── rotas.tsx
+│   ├── vite-env.d.ts
+│   ├── estilos/
+│   │   ├── tokens.css
+│   │   ├── global.css
+│   │   └── componentes.css
+│   ├── tipos/
+│   │   └── index.ts
+│   ├── api/
+│   │   ├── cliente.ts
+│   │   └── dados_demo.ts
+│   ├── hooks/
+│   │   └── useEventos.ts
+│   ├── estado/
+│   │   └── store.ts
+│   ├── componentes/
+│   │   ├── layout/
+│   │   │   ├── Sidebar.tsx
+│   │   │   ├── Topbar.tsx
+│   │   │   └── Layout.tsx
+│   │   └── ui/
+│   │       ├── index.ts
+│   │       ├── Botao.tsx
+│   │       ├── Card.tsx
+│   │       ├── Badge.tsx
+│   │       ├── BarraProgresso.tsx
+│   │       ├── Campo.tsx
+│   │       ├── Toggle.tsx
+│   │       ├── Modal.tsx
+│   │       ├── Toast.tsx
+│   │       └── Grafico.tsx
+│   │   └── especificos/
+│   │       ├── CentralDeAlertas.tsx
+│   │       └── HealthGauge.tsx
+│   └── paginas/
+│       ├── VisaoGeral.tsx
+│       ├── FilaImpressao.tsx
+│       ├── Impressoras.tsx
+│       ├── Suprimentos.tsx
+│       ├── Relatorios.tsx
+│       ├── UsuariosCotas.tsx
+│       ├── Configuracoes.tsx
+│       ├── ManutencaoPreditiva.tsx   ← recursos avançados / M1
+│       ├── SaudeDispositivo.tsx
+│       ├── RoteamentoInteligente.tsx ← recursos avançados / M2
+│       ├── Sincronizacao.tsx         ← recursos avançados / M3
+│       └── ConfiguracoesAvancadas.tsx ← recursos avançados / M4
+├── public/
+│   ├── fonts/
+│   └── robots.txt
+└── dist/                         ← gerado por npm run build

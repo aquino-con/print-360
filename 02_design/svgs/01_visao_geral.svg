@@ -1,0 +1,243 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900" font-family="Inter, system-ui, sans-serif">
+  <defs>
+    <filter id="sombra" x="-10%" y="-10%" width="120%" height="140%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.08"/>
+    </filter>
+    <g id="ic-grid" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h7v7H3z M14 3h7v7h-7z M14 14h7v7h-7z M3 14h7v7H3z"/></g>
+    <g id="ic-list" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 6h13 M8 12h13 M8 18h13 M3 6h.01 M3 12h.01 M3 18h.01"/></g>
+    <g id="ic-printer" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6 M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2 M6 14h12v7H6z"/></g>
+    <g id="ic-package" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5 9 5 9-5z M3 8v8l9 5 9-5V8 M12 13v8"/></g>
+    <g id="ic-chart" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18 M6 17V9 M11 17V5 M16 17v-6 M21 17V8"/></g>
+    <g id="ic-users" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2 M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8 M23 21v-2a4 4 0 0 0-3-3.87 M16 3.13a4 4 0 0 1 0 7.75"/></g>
+    <g id="ic-gear" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z M19.4 15a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1.03 1.56V21a2 2 0 1 1-4 0v-.09A1.7 1.7 0 0 0 9 19.4a1.7 1.7 0 0 0-1.87.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-1.56-1.03H3a2 2 0 1 1 0-4h.09A1.7 1.7 0 0 0 4.6 9a1.7 1.7 0 0 0-.34-1.87l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.7 1.7 0 0 0 9 4.6h.09A1.7 1.7 0 0 0 10 3.09V3a2 2 0 1 1 4 0v.09A1.7 1.7 0 0 0 15 4.6a1.7 1.7 0 0 0 1.87-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.7 1.7 0 0 0 19.4 9v.09a1.7 1.7 0 0 0 1.56 1.03H21a2 2 0 1 1 0 4h-.09A1.7 1.7 0 0 0 19.4 15z"/></g>
+    <g id="ic-bell" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9 M13.7 21a2 2 0 0 1-3.4 0"/></g>
+    <g id="ic-search" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16z M21 21l-4.35-4.35"/></g>
+    <g id="ic-refresh" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 4v6h-6 M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></g>
+    <g id="ic-file" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z M14 2v6h6"/></g>
+    <g id="ic-alert" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z M12 9v4 M12 17h.01"/></g>
+    <g id="ic-info" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z M12 16v-4 M12 8h.01"/></g>
+    <g id="ic-clock" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z M12 6v6l4 2"/></g>
+  </defs>
+  <style>
+    .ttl{font-size:24px;font-weight:700;fill:#0F172A}
+    .sub{font-size:12px;fill:#64748B}
+    .ct{font-size:14px;font-weight:600;fill:#0F172A}
+    .kl{font-size:12px;fill:#64748B}
+    .ks{font-size:10px;fill:#94A3B8}
+    .kv{font-size:26px;font-weight:700;fill:#0F172A}
+    .nav{font-size:13px;fill:#CBD5E1}
+    .nava{font-size:13px;font-weight:600;fill:#FFFFFF}
+    .th{font-size:10px;font-weight:600;fill:#64748B;letter-spacing:.5px}
+    .tx{font-size:12px;fill:#334155}
+    .txs{font-size:11px;font-weight:600;fill:#0F172A}
+    .mut{font-size:10px;fill:#94A3B8}
+    .lk{font-size:11px;font-weight:600;fill:#2563EB}
+  </style>
+
+  <!-- Fundo -->
+  <rect width="1440" height="900" fill="#F1F5F9"/>
+
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="248" height="900" fill="#0F172A"/>
+  <rect x="24" y="24" width="40" height="40" rx="10" fill="#2563EB"/>
+  <use href="#ic-printer" x="31" y="31" width="26" height="26" style="color:#FFFFFF"/>
+  <text x="76" y="42" font-size="17" font-weight="700" fill="#FFFFFF">Print 360</text>
+  <text x="76" y="58" font-size="9" fill="#94A3B8" letter-spacing="1.2">AQUINO CONSULTORIA</text>
+  <text x="24" y="126" font-size="10" fill="#475569" letter-spacing="1.5">MENU PRINCIPAL</text>
+
+  <!-- Item ativo -->
+  <rect x="12" y="140" width="224" height="40" rx="8" fill="#1E293B"/>
+  <rect x="12" y="148" width="3" height="24" rx="1.5" fill="#06B6D4"/>
+  <use href="#ic-grid" x="24" y="150" width="20" height="20" style="color:#FFFFFF"/>
+  <text x="56" y="165" class="nava">Visão Geral</text>
+
+  <use href="#ic-list" x="24" y="194" width="20" height="20" style="color:#94A3B8"/>
+  <text x="56" y="209" class="nav">Fila de Impressão</text>
+  <circle cx="220" cy="204" r="11" fill="#EF4444"/>
+  <text x="220" y="208" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+
+  <use href="#ic-printer" x="24" y="238" width="20" height="20" style="color:#94A3B8"/>
+  <text x="56" y="253" class="nav">Impressoras</text>
+
+  <use href="#ic-package" x="24" y="282" width="20" height="20" style="color:#94A3B8"/>
+  <text x="56" y="297" class="nav">Suprimentos</text>
+  <circle cx="220" cy="292" r="11" fill="#F59E0B"/>
+  <text x="220" y="296" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">5</text>
+
+  <use href="#ic-chart" x="24" y="326" width="20" height="20" style="color:#94A3B8"/>
+  <text x="56" y="341" class="nav">Relatórios</text>
+
+  <use href="#ic-users" x="24" y="370" width="20" height="20" style="color:#94A3B8"/>
+  <text x="56" y="385" class="nav">Usuários e Cotas</text>
+
+  <use href="#ic-gear" x="24" y="414" width="20" height="20" style="color:#94A3B8"/>
+  <text x="56" y="429" class="nav">Configurações</text>
+
+  <line x1="24" y1="800" x2="224" y2="800" stroke="#1E293B"/>
+  <circle cx="30" cy="824" r="5" fill="#10B981"/>
+  <text x="44" y="828" font-size="11" fill="#94A3B8">Sistema online</text>
+  <text x="24" y="852" font-size="10" fill="#475569">v1.0.0 · Aquino Consultoria</text>
+
+  <!-- Topbar -->
+  <rect x="248" y="0" width="1192" height="72" fill="#FFFFFF"/>
+  <line x1="248" y1="71" x2="1440" y2="71" stroke="#E2E8F0"/>
+  <text x="280" y="42" font-size="13" fill="#94A3B8">Painel / <tspan font-weight="600" fill="#0F172A">Visão Geral</tspan></text>
+  <rect x="740" y="16" width="360" height="40" rx="8" fill="#F1F5F9" stroke="#E2E8F0"/>
+  <use href="#ic-search" x="756" y="26" width="18" height="18" style="color:#94A3B8"/>
+  <text x="784" y="41" font-size="12" fill="#94A3B8">Buscar impressoras, trabalhos, usuários...</text>
+  <use href="#ic-bell" x="1300" y="25" width="22" height="22" style="color:#64748B"/>
+  <circle cx="1320" cy="27" r="4" fill="#EF4444" stroke="#FFFFFF" stroke-width="1.5"/>
+  <line x1="1344" y1="20" x2="1344" y2="52" stroke="#E2E8F0"/>
+  <circle cx="1392" cy="36" r="18" fill="#DBEAFE"/>
+  <text x="1392" y="41" font-size="12" font-weight="700" fill="#2563EB" text-anchor="middle">AC</text>
+
+  <!-- Cabeçalho do conteúdo -->
+  <text x="280" y="124" class="ttl">Visão Geral</text>
+  <text x="280" y="146" class="sub">Panorama da operação de impressão · Quinta-feira, 19 de novembro de 2026</text>
+  <rect x="1252" y="104" width="148" height="36" rx="8" fill="#2563EB"/>
+  <use href="#ic-refresh" x="1264" y="114" width="16" height="16" style="color:#FFFFFF"/>
+  <text x="1288" y="127" font-size="12" font-weight="600" fill="#FFFFFF">Atualizar</text>
+
+  <!-- KPIs -->
+  <g filter="url(#sombra)">
+    <rect x="280" y="176" width="265" height="112" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <rect x="565" y="176" width="265" height="112" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <rect x="850" y="176" width="265" height="112" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <rect x="1135" y="176" width="265" height="112" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+  </g>
+  <!-- KPI 1 -->
+  <rect x="300" y="194" width="38" height="38" rx="10" fill="#DBEAFE"/>
+  <use href="#ic-file" x="309" y="203" width="20" height="20" style="color:#2563EB"/>
+  <text x="350" y="208" class="kl">Páginas impressas</text>
+  <text x="350" y="224" class="ks">Hoje</text>
+  <text x="300" y="270" class="kv">12.480</text>
+  <rect x="445" y="252" width="80" height="24" rx="12" fill="#D1FAE5"/>
+  <text x="485" y="268" font-size="11" font-weight="700" fill="#059669" text-anchor="middle">+8,2%</text>
+  <!-- KPI 2 -->
+  <rect x="585" y="194" width="38" height="38" rx="10" fill="#CFFAFE"/>
+  <use href="#ic-chart" x="594" y="203" width="20" height="20" style="color:#0891B2"/>
+  <text x="635" y="208" class="kl">Custo estimado</text>
+  <text x="635" y="224" class="ks">Mês de novembro</text>
+  <text x="585" y="270" class="kv" font-size="24">R$ 3.842,70</text>
+  <rect x="730" y="252" width="80" height="24" rx="12" fill="#D1FAE5"/>
+  <text x="770" y="268" font-size="11" font-weight="700" fill="#059669" text-anchor="middle">-3,1%</text>
+  <!-- KPI 3 -->
+  <rect x="870" y="194" width="38" height="38" rx="10" fill="#D1FAE5"/>
+  <use href="#ic-printer" x="879" y="203" width="20" height="20" style="color:#10B981"/>
+  <text x="920" y="208" class="kl">Impressoras ativas</text>
+  <text x="920" y="224" class="ks">De 21 no total</text>
+  <text x="870" y="270" class="kv">18</text>
+  <rect x="1005" y="252" width="94" height="24" rx="12" fill="#DBEAFE"/>
+  <text x="1052" y="268" font-size="11" font-weight="700" fill="#2563EB" text-anchor="middle">86% online</text>
+  <!-- KPI 4 -->
+  <rect x="1155" y="194" width="38" height="38" rx="10" fill="#FEE2E2"/>
+  <use href="#ic-bell" x="1164" y="203" width="20" height="20" style="color:#EF4444"/>
+  <text x="1205" y="208" class="kl">Alertas pendentes</text>
+  <text x="1205" y="224" class="ks">Requerem atenção</text>
+  <text x="1155" y="270" class="kv">5</text>
+  <rect x="1280" y="252" width="100" height="24" rx="12" fill="#FEE2E2"/>
+  <text x="1330" y="268" font-size="11" font-weight="700" fill="#DC2626" text-anchor="middle">2 críticos</text>
+
+  <!-- Gráfico de volume -->
+  <g filter="url(#sombra)"><rect x="280" y="308" width="720" height="300" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/></g>
+  <text x="304" y="340" class="ct">Volume de impressão</text>
+  <text x="304" y="358" class="ks">Páginas por dia · últimos 7 dias</text>
+  <g stroke="#F1F5F9" stroke-width="1">
+    <line x1="320" y1="410" x2="960" y2="410"/><line x1="320" y1="460" x2="960" y2="460"/>
+    <line x1="320" y1="510" x2="960" y2="510"/><line x1="320" y1="556" x2="960" y2="556"/>
+  </g>
+  <g font-size="9" fill="#94A3B8" text-anchor="end">
+    <text x="314" y="413">1,8k</text><text x="314" y="463">1,2k</text><text x="314" y="513">600</text><text x="314" y="559">0</text>
+  </g>
+  <g fill="#2563EB">
+    <rect x="340" y="443" width="46" height="113" rx="5"/>
+    <rect x="435" y="425" width="46" height="131" rx="5"/>
+    <rect x="530" y="434" width="46" height="122" rx="5"/>
+    <rect x="720" y="418" width="46" height="138" rx="5"/>
+    <rect x="815" y="456" width="46" height="100" rx="5"/>
+    <rect x="910" y="479" width="46" height="77" rx="5"/>
+  </g>
+  <rect x="625" y="406" width="46" height="150" rx="5" fill="#06B6D4"/>
+  <g font-size="10" fill="#94A3B8" text-anchor="middle">
+    <text x="363" y="576">Seg</text><text x="458" y="576">Ter</text><text x="553" y="576">Qua</text>
+  </g>
+  <text x="648" y="576" font-size="10" font-weight="700" fill="#0891B2" text-anchor="middle">Qui</text>
+  <g font-size="10" fill="#94A3B8" text-anchor="middle">
+    <text x="743" y="576">Sex</text><text x="838" y="576">Sáb</text><text x="933" y="576">Dom</text>
+  </g>
+
+  <!-- Status da frota -->
+  <g filter="url(#sombra)"><rect x="1020" y="308" width="380" height="300" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/></g>
+  <text x="1044" y="340" class="ct">Status da frota</text>
+  <text x="1376" y="340" class="lk" text-anchor="end">Ver todos</text>
+  <g>
+    <circle cx="1044" cy="368" r="5" fill="#10B981"/>
+    <text x="1060" y="372" class="txs">HP LaserJet Pro M404</text>
+    <text x="1376" y="372" font-size="10" font-weight="600" fill="#059669" text-anchor="end">Pronta</text>
+    <rect x="1060" y="380" width="240" height="5" rx="2.5" fill="#E2E8F0"/><rect x="1060" y="380" width="173" height="5" rx="2.5" fill="#10B981"/>
+
+    <circle cx="1044" cy="418" r="5" fill="#10B981"/>
+    <text x="1060" y="422" class="txs">Canon imageCLASS MF445</text>
+    <text x="1376" y="422" font-size="10" font-weight="600" fill="#059669" text-anchor="end">Pronta</text>
+    <rect x="1060" y="430" width="240" height="5" rx="2.5" fill="#E2E8F0"/><rect x="1060" y="430" width="139" height="5" rx="2.5" fill="#10B981"/>
+
+    <circle cx="1044" cy="468" r="5" fill="#F59E0B"/>
+    <text x="1060" y="472" class="txs">Epson L3210</text>
+    <text x="1376" y="472" font-size="10" font-weight="600" fill="#D97706" text-anchor="end">Ocupada</text>
+    <rect x="1060" y="480" width="240" height="5" rx="2.5" fill="#E2E8F0"/><rect x="1060" y="480" width="43" height="5" rx="2.5" fill="#EF4444"/>
+
+    <circle cx="1044" cy="518" r="5" fill="#EF4444"/>
+    <text x="1060" y="522" class="txs">Brother MFC-L2710</text>
+    <text x="1376" y="522" font-size="10" font-weight="600" fill="#DC2626" text-anchor="end">Erro</text>
+    <rect x="1060" y="530" width="240" height="5" rx="2.5" fill="#E2E8F0"/><rect x="1060" y="530" width="22" height="5" rx="2.5" fill="#EF4444"/>
+
+    <circle cx="1044" cy="568" r="5" fill="#94A3B8"/>
+    <text x="1060" y="572" class="txs">Xerox VersaLink C405</text>
+    <text x="1376" y="572" font-size="10" font-weight="600" fill="#64748B" text-anchor="end">Offline</text>
+    <rect x="1060" y="580" width="240" height="5" rx="2.5" fill="#E2E8F0"/><rect x="1060" y="580" width="98" height="5" rx="2.5" fill="#F59E0B"/>
+  </g>
+
+  <!-- Atividade recente -->
+  <g filter="url(#sombra)"><rect x="280" y="628" width="720" height="236" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/></g>
+  <text x="304" y="660" class="ct">Atividade recente</text>
+  <text x="976" y="660" class="lk" text-anchor="end">Ver histórico</text>
+  <g>
+    <circle cx="308" cy="695" r="14" fill="#D1FAE5"/><use href="#ic-file" x="300" y="687" width="16" height="16" style="color:#10B981"/>
+    <text x="336" y="694" class="txs">Trabalho concluído — Relatorio_vendas.pdf</text>
+    <text x="336" y="708" class="mut">HP LaserJet Pro M404 · 12 páginas</text>
+    <text x="976" y="699" class="mut" text-anchor="end">há 3 min</text>
+
+    <circle cx="308" cy="739" r="14" fill="#DBEAFE"/><use href="#ic-printer" x="300" y="731" width="16" height="16" style="color:#2563EB"/>
+    <text x="336" y="738" class="txs">Novo trabalho na fila — Contrato_2026.docx</text>
+    <text x="336" y="752" class="mut">Canon imageCLASS MF445 · 6 páginas</text>
+    <text x="976" y="743" class="mut" text-anchor="end">há 8 min</text>
+
+    <circle cx="308" cy="783" r="14" fill="#FEE2E2"/><use href="#ic-alert" x="300" y="775" width="16" height="16" style="color:#EF4444"/>
+    <text x="336" y="782" class="txs">Falha de impressão — Manual_tecnico.pdf</text>
+    <text x="336" y="796" class="mut">Brother MFC-L2710 · bandeja vazia</text>
+    <text x="976" y="787" class="mut" text-anchor="end">há 21 min</text>
+
+    <circle cx="308" cy="827" r="14" fill="#FEF3C7"/><use href="#ic-package" x="300" y="819" width="16" height="16" style="color:#F59E0B"/>
+    <text x="336" y="826" class="txs">Suprimento registrado — Toner preto</text>
+    <text x="336" y="840" class="mut">Epson L3210 · troca realizada por Ricardo</text>
+    <text x="976" y="831" class="mut" text-anchor="end">há 1 h</text>
+  </g>
+
+  <!-- Alertas recentes -->
+  <g filter="url(#sombra)"><rect x="1020" y="628" width="380" height="236" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/></g>
+  <text x="1044" y="660" class="ct">Alertas recentes</text>
+  <text x="1376" y="660" class="lk" text-anchor="end">Ver todos</text>
+  <g>
+    <circle cx="1060" cy="700" r="14" fill="#FEE2E2"/><use href="#ic-alert" x="1053" y="693" width="14" height="14" style="color:#EF4444"/>
+    <text x="1084" y="699" font-size="11" font-weight="600" fill="#0F172A">Erro de papel — Brother MFC</text>
+    <text x="1084" y="713" class="mut">Bandeja 1 vazia · há 5 min</text>
+
+    <circle cx="1060" cy="752" r="14" fill="#FEF3C7"/><use href="#ic-alert" x="1053" y="745" width="14" height="14" style="color:#F59E0B"/>
+    <text x="1084" y="751" font-size="11" font-weight="600" fill="#0F172A">Toner baixo — Epson L3210</text>
+    <text x="1084" y="765" class="mut">Nível 18% · há 12 min</text>
+
+    <circle cx="1060" cy="804" r="14" fill="#DBEAFE"/><use href="#ic-info" x="1053" y="797" width="14" height="14" style="color:#3B82F6"/>
+    <text x="1084" y="803" font-size="11" font-weight="600" fill="#0F172A">Cota excedida — Financeiro</text>
+    <text x="1084" y="817" class="mut">SetorFinanceiro · há 1 h</text>
+  </g>
+</svg>
