@@ -1,4 +1,5 @@
 pub mod coletor;
+pub mod rede;
 pub mod spooler;
 pub mod util;
 

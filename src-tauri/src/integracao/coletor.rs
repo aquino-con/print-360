@@ -9,7 +9,9 @@ use tauri_plugin_notification::NotificationExt;
 use crate::{
     erro::{AppError, AppResult},
     estado::AppState,
-    servicos::{servico_alertas, servico_custos, servico_suprimentos, servico_usuarios},
+    servicos::{
+        servico_alertas, servico_custos, servico_descoberta, servico_suprimentos, servico_usuarios,
+    },
 };
 
 pub const INTERVALO_SEGUNDOS: u64 = 15;
@@ -82,16 +84,32 @@ pub fn iniciar(app: AppHandle, estado: Arc<AppState>) {
 /// Sincroniza impressoras e trabalhos do spooler com o banco local.
 /// Retorna `true` quando houve alguma alteração relevante.
 pub fn sincronizar(estado: &AppState) -> AppResult<bool> {
-    let impressoras = estado.spooler.listar_impressoras()?;
-    let trabalhos = estado.spooler.listar_trabalhos(None)?;
-
     let mut conexao = estado
         .db
         .lock()
         .map_err(|_| AppError::Validacao("banco de dados indisponível".into()))?;
 
+    let automatica: String = conexao
+        .query_row(
+            "SELECT valor FROM configuracoes WHERE chave = 'descoberta_automatica'",
+            [],
+            |linha| linha.get(0),
+        )
+        .unwrap_or_else(|_| "true".to_string());
+
+    let impressoras = if automatica == "true" {
+        servico_descoberta::coletar(&conexao, &*estado.spooler).unwrap_or_else(|erro| {
+            log::warn!("Descoberta automática falhou: {}", erro);
+            Vec::new()
+        })
+    } else {
+        Vec::new()
+    };
+    let trabalhos = estado.spooler.listar_trabalhos(None)?;
+
     let transacao = conexao.transaction()?;
-    let alterou_impressoras = sincronizar_impressoras(&transacao, &impressoras)?;
+    let descoberta = servico_descoberta::aplicar(&transacao, &impressoras)?;
+    let alterou_impressoras = descoberta.novas > 0 || descoberta.atualizadas > 0;
     let alterou_trabalhos = sincronizar_trabalhos(&transacao, &trabalhos)?;
     let alterou_alertas = sincronizar_alertas(&transacao, &impressoras)?;
     transacao.commit()?;
@@ -128,45 +146,6 @@ pub fn sincronizar(estado: &AppState) -> AppResult<bool> {
         || alterou_cotas
         || alterou_predicao
         || alterou_roteamento)
-}
-
-fn sincronizar_impressoras(
-    conexao: &Connection,
-    impressoras: &[super::spooler::ImpressoraSistema],
-) -> AppResult<bool> {
-    let mut alterou = false;
-    for impressora in impressoras {
-        let mudou = conexao.execute(
-            "INSERT INTO impressoras (nome, modelo, endereco, status, origem, ultima_vista)
-             VALUES (?1, ?2, ?3, ?4, 'spooler', CURRENT_TIMESTAMP)
-             ON CONFLICT(nome) DO UPDATE SET
-                 modelo = excluded.modelo,
-                 endereco = excluded.endereco,
-                 status = excluded.status,
-                 origem = 'spooler',
-                 ultima_vista = CURRENT_TIMESTAMP
-             WHERE impressoras.status <> excluded.status
-                OR impressoras.modelo IS NOT excluded.modelo
-                OR impressoras.endereco IS NOT excluded.endereco",
-            params![
-                impressora.nome,
-                impressora.modelo,
-                impressora.endereco,
-                impressora.status
-            ],
-        )?;
-        alterou |= mudou > 0;
-
-        // Garante suprimentos básicos para impressoras recém-descobertas (RF-011).
-        for tipo in ["toner_preto", "papel"] {
-            conexao.execute(
-                "INSERT OR IGNORE INTO suprimentos (impressora_id, tipo, nivel)
-                 SELECT id, ?2, 100 FROM impressoras WHERE nome = ?1",
-                params![impressora.nome, tipo],
-            )?;
-        }
-    }
-    Ok(alterou)
 }
 
 fn sincronizar_trabalhos(

@@ -14,6 +14,7 @@ import type {
   OrdemServico,
   RegraRoteamento,
   PrevisaoItem,
+  ResultadoDescoberta,
   ResultadoSync,
   StatusSync,
   RegistroAuditoria,
@@ -93,6 +94,7 @@ const ACOES_DEMO: Record<string, (args: Record<string, unknown>) => void> = {
       id: Date.now(), nome: String(nome), modelo: null,
       endereco: endereco ? String(endereco) : null,
       status: "desconhecido", setor: setor ? String(setor) : null,
+      origem: "manual", ultima_vista: null,
     });
   },
   registrar_troca_suprimento: ({ impressora_id, tipo }) => {
@@ -164,6 +166,12 @@ const ACOES_DEMO: Record<string, (args: Record<string, unknown>) => void> = {
     const indice = regrasDemo.findIndex((item) => item.id === Number(id));
     if (indice >= 0) regrasDemo.splice(indice, 1);
   },
+  descobrir_impressoras: () => ({
+    encontradas: impressorasDemo.length,
+    novas: 0,
+    atualizadas: 0,
+    tempo_ms: 120,
+  }),
   sincronizar_agora: () => {
     statusSyncDemo.pendencias = 0;
     outboxDemo.splice(0, outboxDemo.length);
@@ -289,6 +297,7 @@ export interface DadosNovoUsuario {
 
 export const api = {
   listarImpressoras: () => chamar<Impressora[]>("listar_impressoras"),
+  descobrirImpressoras: () => chamar<ResultadoDescoberta>("descobrir_impressoras"),
   listarTrabalhos: () => chamar<Trabalho[]>("listar_trabalhos"),
   obterResumo: () => chamar<ResumoDashboard>("obter_resumo_dashboard"),
   obterAtividade: () => chamar<AtividadeItem[]>("obter_atividade_recente", { limite: 8 }),

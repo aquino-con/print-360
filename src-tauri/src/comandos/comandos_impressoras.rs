@@ -6,7 +6,7 @@ use tauri::State;
 use crate::{
     erro::{AppError, AppResult},
     estado::AppState,
-    modelos::{DetalhesImpressora, Impressora},
+    modelos::{DetalhesImpressora, Impressora, ResultadoDescoberta},
     util::validacao::nao_vazio,
 };
 
@@ -19,7 +19,8 @@ pub fn listar_impressoras(state: State<'_, Arc<AppState>>) -> AppResult<Vec<Impr
         .map_err(|_| AppError::Validacao("banco de dados indisponível".into()))?;
 
     let mut declaracao = conexao.prepare(
-        "SELECT i.id, i.nome, i.modelo, i.endereco, i.status, s.nome AS setor
+        "SELECT i.id, i.nome, i.modelo, i.endereco, i.status, s.nome AS setor,
+                i.origem, i.ultima_vista
          FROM impressoras i
          LEFT JOIN setores s ON s.id = i.setor_id
          ORDER BY i.nome",
@@ -33,10 +34,35 @@ pub fn listar_impressoras(state: State<'_, Arc<AppState>>) -> AppResult<Vec<Impr
             endereco: linha.get(3)?,
             status: linha.get(4)?,
             setor: linha.get(5)?,
+            origem: linha.get(6)?,
+            ultima_vista: linha.get(7)?,
         })
     })?;
 
     linhas.map(|linha| linha.map_err(AppError::from)).collect()
+}
+
+/// Descoberta manual: spooler local + rede configurada (RF-001).
+#[tauri::command]
+pub fn descobrir_impressoras(
+    state: State<'_, Arc<AppState>>,
+) -> AppResult<ResultadoDescoberta> {
+    let conexao = state
+        .db
+        .lock()
+        .map_err(|_| AppError::Validacao("banco de dados indisponível".into()))?;
+    let resultado = crate::servicos::servico_descoberta::descobrir(&conexao, &*state.spooler)?;
+    crate::servicos::servico_auditoria::registrar(
+        &conexao,
+        "descobrir_impressoras",
+        "impressora",
+        None,
+        Some(&format!(
+            "{} encontrada(s), {} nova(s), {} atualizada(s)",
+            resultado.encontradas, resultado.novas, resultado.atualizadas
+        )),
+    )?;
+    Ok(resultado)
 }
 
 /// Ficha técnica completa de uma impressora (RF-004).

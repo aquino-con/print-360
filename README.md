@@ -209,6 +209,9 @@ com feature flags, sem exigir servidor e preservando a soberania dos dados locai
   (`obter_atividade_recente`, `listar_outbox` e demais consultas existentes).
 - **Módulo Impressoras:** busca por nome/modelo/endereço/setor, filtros de status e setor,
   estados de carregamento/erro/vazio e ficha técnica via `obter_detalhes_impressora`.
+- **Descoberta manual e automática:** botão "Descobrir impressoras" e coleta periódica usam a
+  mesma rotina (`servico_descoberta`). A descoberta em rede é opcional e só examina IPs/CIDRs
+  configurados em Configurações → Geral (portas IPP 631 e RAW 9100), com limite de 512 alvos.
 
 ---
 

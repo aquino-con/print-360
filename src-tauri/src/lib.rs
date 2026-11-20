@@ -33,6 +33,7 @@ pub fn run() {
         })
         .invoke_handler(tauri::generate_handler![
             comandos::comandos_impressoras::listar_impressoras,
+            comandos::comandos_impressoras::descobrir_impressoras,
             comandos::comandos_impressoras::obter_detalhes_impressora,
             comandos::comandos_impressoras::adicionar_impressora,
             comandos::comandos_impressoras::pausar_impressora,

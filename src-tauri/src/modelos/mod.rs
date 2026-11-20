@@ -12,6 +12,9 @@ pub struct Impressora {
     pub endereco: Option<String>,
     pub status: String,
     pub setor: Option<String>,
+    /// Origem do cadastro: `spooler` (descoberta) ou `manual`.
+    pub origem: String,
+    pub ultima_vista: Option<String>,
 }
 
 /// DTO de trabalho da fila enviado ao frontend.
@@ -90,6 +93,15 @@ pub struct Alerta {
     pub impressora: Option<String>,
     pub resolvido: bool,
     pub criado_em: String,
+}
+
+/// Resultado de uma execução de descoberta de impressoras.
+#[derive(Debug, Clone, Serialize)]
+pub struct ResultadoDescoberta {
+    pub encontradas: usize,
+    pub novas: usize,
+    pub atualizadas: usize,
+    pub tempo_ms: i64,
 }
 
 /// Resumo de trabalho para a ficha da impressora.

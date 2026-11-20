@@ -7,6 +7,15 @@ export interface Impressora {
   endereco: string | null;
   status: string;
   setor: string | null;
+  origem: string;
+  ultima_vista: string | null;
+}
+
+export interface ResultadoDescoberta {
+  encontradas: number;
+  novas: number;
+  atualizadas: number;
+  tempo_ms: number;
 }
 
 export interface Trabalho {

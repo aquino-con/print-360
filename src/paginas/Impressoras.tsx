@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { AlertTriangle, Pause, Play, Plus, Printer, RefreshCw, Trash2 } from "lucide-react";
+import { AlertTriangle, Pause, Play, Plus, Printer, RefreshCw, Search, Trash2 } from "lucide-react";
 import { api, type DadosNovaImpressora } from "../api/cliente";
 import type { GrupoSuprimento, Impressora, Setor } from "../tipos";
-import { BadgeStatus, Campo, Card, CardKPI, Modal } from "../componentes/ui";
+import { Badge, BadgeStatus, Campo, Card, CardKPI, Modal } from "../componentes/ui";
 import { useAtualizacoes } from "../hooks/useEventos";
 import { useAppStore } from "../estado/store";
 
@@ -34,6 +34,8 @@ export function Impressoras() {
   const [status, setStatus] = useState("todos");
   const [setor, setSetor] = useState("todos");
   const [carregando, setCarregando] = useState(true);
+  const [descobrindo, setDescobrindo] = useState(false);
+  const [ultimaDescoberta, setUltimaDescoberta] = useState<string | null>(null);
   const [erro, setErro] = useState<string | null>(null);
   const [novaAberta, setNovaAberta] = useState(false);
   const [novo, setNovo] = useState<DadosNovaImpressora>({ nome: "", endereco: "", setor: "" });
@@ -48,11 +50,13 @@ export function Impressoras() {
       api.listarImpressoras(),
       api.listarSuprimentos(),
       api.listarSetores(),
+      api.obterConfiguracoes(),
     ])
-      .then(([lista, grupos, listaSetores]) => {
+      .then(([lista, grupos, listaSetores, config]) => {
         setImpressoras(lista);
         setGruposSuprimento(grupos);
         setSetores(listaSetores);
+        setUltimaDescoberta(config.ultima_descoberta ?? null);
       })
       .catch((falha) => setErro(String(falha)))
       .finally(() => setCarregando(false));
@@ -60,6 +64,22 @@ export function Impressoras() {
 
   useEffect(carregar, [carregar]);
   useAtualizacoes(carregar);
+
+  const descobrir = async () => {
+    setDescobrindo(true);
+    try {
+      const resultado = await api.descobrirImpressoras();
+      notificar(
+        `Descoberta concluída: ${resultado.encontradas} encontrada(s), ` +
+        `${resultado.novas} nova(s), ${resultado.atualizadas} atualizada(s) em ${resultado.tempo_ms} ms.`
+      );
+      carregar();
+    } catch (falha) {
+      notificar(`Falha na descoberta: ${String(falha)}`);
+    } finally {
+      setDescobrindo(false);
+    }
+  };
 
   const filtradas = useMemo(() => {
     const termo = busca.trim().toLowerCase();
@@ -116,9 +136,14 @@ export function Impressoras() {
           <h1 className="titulo-pagina">Impressoras</h1>
           <p className="subtitulo-pagina">Inventário e saúde da frota de dispositivos</p>
         </div>
-        <button className="botao botao--primario" onClick={() => setNovaAberta(true)}>
-          <Plus size={16} /> Adicionar impressora
-        </button>
+        <div className="flex align-center gap-2">
+          <button className="botao botao--secundario" onClick={descobrir} disabled={descobrindo}>
+            <Search size={16} /> {descobrindo ? "Descobrindo..." : "Descobrir impressoras"}
+          </button>
+          <button className="botao botao--primario" onClick={() => setNovaAberta(true)}>
+            <Plus size={16} /> Adicionar impressora
+          </button>
+        </div>
       </div>
 
       <div className="grade-kpis">
@@ -161,6 +186,7 @@ export function Impressoras() {
           </select>
           <span style={{ fontSize: 11, color: "var(--cor-texto-secundario)", marginLeft: 8 }}>
             {filtradas.length} de {impressoras.length} impressoras
+            {ultimaDescoberta && ` · última descoberta ${new Date(ultimaDescoberta).toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" })}`}
           </span>
           <button className="botao botao--secundario" style={{ marginLeft: "auto" }} onClick={carregar} disabled={carregando}>
             <RefreshCw size={15} /> Atualizar
@@ -204,7 +230,12 @@ export function Impressoras() {
                     <div style={{ fontSize: 14, fontWeight: 700, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{impressora.nome}</div>
                     <div style={{ fontSize: 10, color: "var(--cor-texto-claro)" }}>{impressora.modelo ?? "Modelo não informado"}</div>
                   </div>
-                  <div style={{ marginLeft: "auto" }}><BadgeStatus status={impressora.status} /></div>
+                  <div className="flex align-center gap-2" style={{ marginLeft: "auto" }}>
+                    <BadgeStatus status={impressora.status} />
+                    {impressora.origem === "manual"
+                      ? <Badge tipo="neutro">Manual</Badge>
+                      : <Badge tipo="info">Rede</Badge>}
+                  </div>
                 </div>
                 <hr style={{ border: 0, borderTop: "1px solid var(--cor-fundo)", margin: "16px 0" }} />
                 <div className="flex justify-between" style={{ fontSize: 11 }}>

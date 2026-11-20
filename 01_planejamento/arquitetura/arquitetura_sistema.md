@@ -219,4 +219,22 @@ A arquitetura foi materializada no M2 com os seguintes ajustes:
 
 ---
 
+## 13. Descoberta manual e automática de impressoras
+
+- **`servico_descoberta`** centraliza a persistência usada pelos dois caminhos: consulta ao
+  spooler (`Spooler::listar_impressoras`) e aplicação com `UPSERT` por nome, criação de
+  suprimentos básicos e registro de `origem = 'spooler'`.
+- **Botão "Descobrir impressoras"** chama `descobrir_impressoras`, que executa a coleta e
+  devolve `ResultadoDescoberta` (encontradas, novas, atualizadas e duração) com auditoria.
+- **Descoberta automática:** o coletor respeita `descoberta_automatica` (padrão `true`) e
+  executa a mesma rotina a cada ciclo; falhas de descoberta nunca bloqueiam a coleta de fila.
+- **Descoberta em rede (opcional):** `integracao/rede.rs` expande apenas IPs/CIDRs IPv4
+  configurados em `descoberta_rede_alvos`, sonda as portas 631 (IPP) e 9100 (RAW) com
+  timeout de 150 ms e concorrência limitada a 16 sondas; blocos acima de 512 alvos são
+  rejeitados. Resultados são deduplicados por endereço antes da persistência.
+- O DTO `Impressora` expõe `origem` e `ultima_vista`, permitindo badges "Rede"/"Manual" e
+  exibindo o horário da última descoberta na tela.
+
+---
+
 *Aquino Consultoria — tecnologia com propósito.*

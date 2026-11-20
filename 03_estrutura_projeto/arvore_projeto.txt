@@ -105,6 +105,7 @@ print_360/
 │       │   ├── servico_alertas.rs
 │       │   ├── servico_atividade.rs
 │       │   ├── servico_auditoria.rs
+│       │   ├── servico_descoberta.rs
 │       │   └── servico_impressoras.rs
 │       ├── roteamento/                ← recursos avançados / M2
 │       │   ├── mod.rs
@@ -123,6 +124,7 @@ print_360/
 │       │   └── migrations.rs
 │       ├── integracao/
 │       │   ├── mod.rs
+│       │   ├── rede.rs
 │       │   ├── spooler.rs
 │       │   ├── spooler_windows.rs
 │       │   ├── spooler_cups.rs

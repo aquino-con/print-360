@@ -27,12 +27,12 @@ export const resumoDemo: ResumoDashboard = {
 };
 
 export const impressorasDemo: Impressora[] = [
-  { id: 1, nome: "Impressora 01", modelo: "Laser", endereco: "192.0.2.10", status: "pronta", setor: "Tecnologia" },
-  { id: 2, nome: "Impressora 02", modelo: "Multifuncional", endereco: "192.0.2.11", status: "pronta", setor: "Financeiro" },
-  { id: 3, nome: "Impressora 03", modelo: "Jato de tinta", endereco: "192.0.2.12", status: "ocupada", setor: "Marketing" },
-  { id: 4, nome: "Impressora 04", modelo: "Multifuncional", endereco: "192.0.2.13", status: "erro", setor: "Recursos Humanos" },
-  { id: 5, nome: "Impressora 05", modelo: "Laser colorida", endereco: "192.0.2.14", status: "manutencao", setor: "Diretoria" },
-  { id: 6, nome: "Impressora 06", modelo: "Plotter", endereco: "192.0.2.15", status: "offline", setor: "Engenharia" },
+  { id: 1, nome: "Impressora 01", modelo: "Laser", endereco: "192.0.2.10", status: "pronta", setor: "Tecnologia" , origem: "spooler", ultima_vista: new Date().toISOString() },
+  { id: 2, nome: "Impressora 02", modelo: "Multifuncional", endereco: "192.0.2.11", status: "pronta", setor: "Financeiro" , origem: "spooler", ultima_vista: new Date().toISOString() },
+  { id: 3, nome: "Impressora 03", modelo: "Jato de tinta", endereco: "192.0.2.12", status: "ocupada", setor: "Marketing" , origem: "spooler", ultima_vista: new Date().toISOString() },
+  { id: 4, nome: "Impressora 04", modelo: "Multifuncional", endereco: "192.0.2.13", status: "erro", setor: "Recursos Humanos" , origem: "spooler", ultima_vista: new Date().toISOString() },
+  { id: 5, nome: "Impressora 05", modelo: "Laser colorida", endereco: "192.0.2.14", status: "manutencao", setor: "Diretoria" , origem: "spooler", ultima_vista: new Date().toISOString() },
+  { id: 6, nome: "Impressora 06", modelo: "Plotter", endereco: "192.0.2.15", status: "offline", setor: "Engenharia" , origem: "spooler", ultima_vista: new Date().toISOString() },
 ];
 
 export const trabalhosDemo: Trabalho[] = [
@@ -302,4 +302,8 @@ export const configuracoesDemo: Record<string, string> = {
   alertas_suprimento: "true",
   limite_nivel_baixo: "20",
   alertas_cota: "false",
+  descoberta_automatica: "true",
+  descoberta_rede_ativa: "false",
+  descoberta_rede_alvos: "",
+  ultima_descoberta: new Date().toISOString(),
 };

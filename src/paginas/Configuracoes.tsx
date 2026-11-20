@@ -120,6 +120,31 @@ export function Configuracoes() {
                     aoAlterar={(valor) => alterar("atualizacao_automatica", String(valor))} />
                 </div>
               </div>
+
+              <div style={{ marginTop: 24, borderTop: "1px solid var(--cor-fundo)", paddingTop: 20 }}>
+                <h3 className="card__titulo" style={{ fontSize: 13 }}>Descoberta de impressoras</h3>
+                <div style={{ display: "grid", gap: 16, marginTop: 16 }}>
+                  <Toggle
+                    rotulo="Descoberta automática"
+                    descricao="Consulta o spooler e a rede a cada ciclo de coleta"
+                    ativo={ligado("descoberta_automatica")}
+                    aoAlterar={(valor) => alterar("descoberta_automatica", String(valor))}
+                  />
+                  <Toggle
+                    rotulo="Descoberta em rede"
+                    descricao="Varre somente os alvos configurados (IPP 631 e RAW 9100)"
+                    ativo={ligado("descoberta_rede_ativa")}
+                    aoAlterar={(valor) => alterar("descoberta_rede_ativa", String(valor))}
+                  />
+                  <Campo
+                    rotulo="Alvos de rede (IPs ou blocos CIDR IPv4, separados por vírgula)"
+                    id="descoberta_rede_alvos"
+                    value={config.descoberta_rede_alvos ?? ""}
+                    onChange={(e) => alterar("descoberta_rede_alvos", e.target.value)}
+                    placeholder="192.0.2.0/30"
+                  />
+                </div>
+              </div>
             </Card>
           )}
 
