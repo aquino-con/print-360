@@ -205,4 +205,18 @@ A arquitetura foi materializada no M2 com os seguintes ajustes:
 
 ---
 
+## 12. Evolução do módulo Impressoras
+
+- **Filtros em memória** sobre a lista devolvida por `listar_impressoras`: busca textual
+  (nome, modelo, endereço, setor), status e setor (de `listar_setores`), com contador
+  "X de Y" e estado vazio.
+- **Estados explícitos** de carregamento (skeleton), erro com "Tentar novamente" e lista vazia.
+- **`obter_detalhes_impressora`:** novo comando e `servico_impressoras` que agregam ficha
+  técnica (serial, firmware, origem, localização, última vista), trabalhos recentes, alertas,
+  ordens de serviço e suprimentos em um único DTO.
+- A tela **Saúde do Dispositivo** passa a receber a impressora selecionada pelo store global,
+  exibindo a ficha técnica e navegando diretamente a partir do card.
+
+---
+
 *Aquino Consultoria — tecnologia com propósito.*

@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { ArrowLeft, CalendarClock, Sparkles, Wrench } from "lucide-react";
 import { api } from "../api/cliente";
-import type { OrdemServico, PrevisaoItem, SaudeImpressora } from "../tipos";
+import type { DetalhesImpressora, OrdemServico, PrevisaoItem, SaudeImpressora } from "../tipos";
 import { Badge, Card } from "../componentes/ui";
 import { HealthGauge } from "../componentes/especificos/HealthGauge";
 import { useAppStore } from "../estado/store";
@@ -13,20 +13,31 @@ export function SaudeDispositivo() {
   const [saude, setSaude] = useState<SaudeImpressora[]>([]);
   const [previsoes, setPrevisoes] = useState<PrevisaoItem[]>([]);
   const [ordens, setOrdens] = useState<OrdemServico[]>([]);
-  const [selecionado, setSelecionado] = useState<number | null>(null);
+  const [detalhes, setDetalhes] = useState<DetalhesImpressora | null>(null);
+  const selecionadoStore = useAppStore((estado) => estado.impressoraSelecionadaId);
+  const [selecionado, setSelecionado] = useState<number | null>(selecionadoStore);
   const definirTela = useAppStore((estado) => estado.definirTela);
+  const selecionarImpressora = useAppStore((estado) => estado.selecionarImpressora);
   const notificar = useAppStore((estado) => estado.notificar);
 
   const carregar = useCallback(() => {
     api.obterSaudeFrota().then((dados) => {
       setSaude(dados);
-      setSelecionado((atual) => atual ?? dados[0]?.impressora_id ?? null);
+      setSelecionado((atual) => atual ?? selecionadoStore ?? dados[0]?.impressora_id ?? null);
     });
     api.obterPrevisoes().then(setPrevisoes);
     api.listarOrdensServico().then(setOrdens);
-  }, []);
+  }, [selecionadoStore]);
 
   useEffect(carregar, [carregar]);
+
+  useEffect(() => {
+    if (selecionado === null) return;
+    selecionarImpressora(selecionado);
+    api.obterDetalhesImpressora(selecionado)
+      .then(setDetalhes)
+      .catch(() => setDetalhes(null));
+  }, [selecionado, selecionarImpressora]);
 
   const dispositivo = saude.find((item) => item.impressora_id === selecionado);
   const previsoesDoDispositivo = previsoes.filter((item) => item.impressora_id === selecionado);
@@ -56,7 +67,12 @@ export function SaudeDispositivo() {
           <h1 className="titulo-pagina" style={{ marginTop: 8 }}>Saúde do Dispositivo</h1>
           <p className="subtitulo-pagina">
             {dispositivo
-              ? `${dispositivo.nome} · Série CNDF9KJ · Setor Tecnologia · Última coleta há 2 min`
+              ? [
+                  dispositivo.nome,
+                  detalhes?.numero_serie && `Série ${detalhes.numero_serie}`,
+                  detalhes?.setor,
+                  detalhes?.ultima_vista && `Última vista: ${new Date(detalhes.ultima_vista).toLocaleString("pt-BR")}`,
+                ].filter(Boolean).join(" · ")
               : "Carregando dispositivo..."}
           </p>
         </div>
@@ -73,6 +89,36 @@ export function SaudeDispositivo() {
           </span>
         </div>
       </div>
+
+      {detalhes && (
+        <Card style={{ marginBottom: 20 }}>
+          <div className="flex align-center justify-between">
+            <h2 className="card__titulo">Ficha técnica</h2>
+            <Badge tipo={detalhes.origem === "manual" ? "neutro" : "info"}>
+              {detalhes.origem === "manual" ? "Cadastro manual" : "Descoberta pela rede"}
+            </Badge>
+          </div>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 20, marginTop: 20 }}>
+            {[
+              { rotulo: "Número de série", valor: detalhes.numero_serie ?? "—" },
+              { rotulo: "Firmware", valor: detalhes.firmware ?? "—" },
+              { rotulo: "Endereço", valor: detalhes.endereco ?? "—" },
+              { rotulo: "Localização", valor: detalhes.localizacao ?? "—" },
+            ].map((campo) => (
+              <div key={campo.rotulo}>
+                <div style={{ fontSize: 10, fontWeight: 600, color: "var(--cor-texto-secundario)" }}>{campo.rotulo}</div>
+                <div style={{ fontSize: 12, fontWeight: 600, marginTop: 4 }}>{campo.valor}</div>
+              </div>
+            ))}
+          </div>
+          <div style={{ display: "flex", gap: 24, marginTop: 20, fontSize: 11, color: "var(--cor-texto-secundario)" }}>
+            <span><strong>{detalhes.trabalhos.length}</strong> trabalhos recentes</span>
+            <span><strong>{detalhes.alertas.length}</strong> alertas ativos</span>
+            <span><strong>{detalhes.manutencoes.length}</strong> ordens de serviço</span>
+            <span><strong>{detalhes.suprimentos.length}</strong> suprimentos</span>
+          </div>
+        </Card>
+      )}
 
       {dispositivo && (
         <>

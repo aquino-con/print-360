@@ -207,6 +207,8 @@ com feature flags, sem exigir servidor e preservando a soberania dos dados locai
 - **Nenhum dado de impressão hardcoded nas telas:** KPIs, atividade, gráficos, níveis de
   suprimento, filtros, fallback de roteamento e fila de sincronização vêm de comandos Rust
   (`obter_atividade_recente`, `listar_outbox` e demais consultas existentes).
+- **Módulo Impressoras:** busca por nome/modelo/endereço/setor, filtros de status e setor,
+  estados de carregamento/erro/vazio e ficha técnica via `obter_detalhes_impressora`.
 
 ---
 

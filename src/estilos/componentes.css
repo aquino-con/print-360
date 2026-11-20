@@ -361,7 +361,7 @@
 .badge--sucesso { background: var(--cor-sucesso-fundo); color: var(--cor-sucesso-texto); }
 .badge--aviso { background: var(--cor-aviso-fundo); color: var(--cor-aviso-texto); }
 .badge--perigo { background: var(--cor-perigo-fundo); color: var(--cor-perigo-texto); }
-.badge--info { background: var(--cor-info-fundo); color: var(--cor-primaria); }
+.badge--info { background: var(--cor-info-fundo); color: #1d4ed8; }
 .badge--neutro { background: var(--cor-fundo); color: var(--cor-texto-secundario); }
 
 /* ---------- Tabela ---------- */

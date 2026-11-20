@@ -12,6 +12,13 @@ const CORES: Record<string, string> = {
   critico: "#DC2626",
 };
 
+const CORES_TEXTO: Record<string, string> = {
+  excelente: "#047857",
+  bom: "#1D4ED8",
+  atencao: "#B45309",
+  critico: "#B91C1C",
+};
+
 const ROTULOS: Record<string, string> = {
   excelente: "Excelente",
   bom: "Bom",
@@ -47,7 +54,7 @@ export function HealthGauge({ valor, classificacao, confianca, tamanho = 164 }: 
       <span
         style={{
           fontSize: 11, fontWeight: 700, padding: "3px 12px", borderRadius: 999,
-          background: `${cor}1f`, color: cor,
+          background: `${cor}1f`, color: CORES_TEXTO[classificacao] ?? "#475569",
         }}
       >
         {ROTULOS[classificacao] ?? classificacao}

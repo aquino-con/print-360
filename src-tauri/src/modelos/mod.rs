@@ -92,6 +92,49 @@ pub struct Alerta {
     pub criado_em: String,
 }
 
+/// Resumo de trabalho para a ficha da impressora.
+#[derive(Debug, Clone, Serialize)]
+pub struct TrabalhoResumo {
+    pub id: i64,
+    pub documento: String,
+    pub usuario: String,
+    pub paginas: i64,
+    pub status: String,
+    pub criado_em: String,
+}
+
+/// Resumo de manutenção para a ficha da impressora.
+#[derive(Debug, Clone, Serialize)]
+pub struct ManutencaoResumo {
+    pub id: i64,
+    pub titulo: String,
+    pub tipo: String,
+    pub responsavel: String,
+    pub data_prevista: String,
+    pub status: String,
+    pub custo_estimado: f64,
+}
+
+/// Ficha técnica completa de uma impressora.
+#[derive(Debug, Clone, Serialize)]
+pub struct DetalhesImpressora {
+    pub impressora_id: i64,
+    pub nome: String,
+    pub modelo: Option<String>,
+    pub numero_serie: Option<String>,
+    pub firmware: Option<String>,
+    pub endereco: Option<String>,
+    pub localizacao: Option<String>,
+    pub setor: Option<String>,
+    pub status: String,
+    pub origem: String,
+    pub ultima_vista: Option<String>,
+    pub trabalhos: Vec<TrabalhoResumo>,
+    pub alertas: Vec<Alerta>,
+    pub manutencoes: Vec<ManutencaoResumo>,
+    pub suprimentos: Vec<Suprimento>,
+}
+
 /// Item do feed de atividade recente.
 #[derive(Debug, Clone, Serialize)]
 pub struct AtividadeItem {

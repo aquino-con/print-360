@@ -108,6 +108,43 @@ export interface RegistroAuditoria {
   registro_em: string;
 }
 
+export interface TrabalhoResumo {
+  id: number;
+  documento: string;
+  usuario: string;
+  paginas: number;
+  status: string;
+  criado_em: string;
+}
+
+export interface ManutencaoResumo {
+  id: number;
+  titulo: string;
+  tipo: string;
+  responsavel: string;
+  data_prevista: string;
+  status: string;
+  custo_estimado: number;
+}
+
+export interface DetalhesImpressora {
+  impressora_id: number;
+  nome: string;
+  modelo: string | null;
+  numero_serie: string | null;
+  firmware: string | null;
+  endereco: string | null;
+  localizacao: string | null;
+  setor: string | null;
+  status: string;
+  origem: string;
+  ultima_vista: string | null;
+  trabalhos: TrabalhoResumo[];
+  alertas: Alerta[];
+  manutencoes: ManutencaoResumo[];
+  suprimentos: Suprimento[];
+}
+
 export interface AtividadeItem {
   tipo: string;
   titulo: string;

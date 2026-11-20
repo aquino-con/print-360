@@ -7,6 +7,7 @@ import type {
   AtividadeItem,
   Condicao,
   ContextoSimulacao,
+  DetalhesImpressora,
   ExecucaoRoteamento,
   Impressora,
   MudancaOutbox,
@@ -194,6 +195,38 @@ function alterarImpressora(nome: string, status: string) {
   if (impressora) impressora.status = status;
 }
 
+function montarDetalhesDemo(id: number): DetalhesImpressora {
+  const impressora = impressorasDemo.find((item) => item.id === id);
+  const grupo = gruposSuprimentoDemo.find((item) => item.impressora_id === id);
+  return {
+    impressora_id: id,
+    nome: impressora?.nome ?? `Impressora ${id}`,
+    modelo: impressora?.modelo ?? null,
+    numero_serie: `SER-${String(id).padStart(4, "0")}`,
+    firmware: "—",
+    endereco: impressora?.endereco ?? null,
+    localizacao: null,
+    setor: impressora?.setor ?? null,
+    status: impressora?.status ?? "desconhecido",
+    origem: "spooler",
+    ultima_vista: new Date().toISOString(),
+    trabalhos: trabalhosDemo
+      .filter((item) => item.impressora === impressora?.nome)
+      .map((item) => ({
+        id: item.id, documento: item.documento, usuario: item.usuario ?? "",
+        paginas: item.paginas, status: item.status, criado_em: item.criado_em,
+      })),
+    alertas: alertasDemo.filter((item) => item.impressora === impressora?.nome),
+    manutencoes: ordensDemo
+      .filter((item) => item.impressora_id === id)
+      .map((item) => ({
+        id: item.id, titulo: item.titulo, tipo: "preventiva", responsavel: item.responsavel ?? "",
+        data_prevista: item.data_prevista ?? "", status: item.status, custo_estimado: item.custo_estimado ?? 0,
+      })),
+    suprimentos: grupo?.itens ?? [],
+  };
+}
+
 /** Wrapper dos comandos Tauri com fallback para dados demo no navegador. */
 export async function chamar<T>(
   comando: string,
@@ -201,6 +234,10 @@ export async function chamar<T>(
 ): Promise<T> {
   if (!DENTRO_TAURI) {
     await new Promise((resolver) => setTimeout(resolver, 100));
+    if (comando === "obter_detalhes_impressora") {
+      const id = Number(argumentos?.id);
+      return montarDetalhesDemo(id) as T;
+    }
     const acao = ACOES_DEMO[comando];
     if (acao) {
       const retorno = acao(argumentos ?? {});
@@ -314,6 +351,8 @@ export const api = {
 
   listarAuditoria: () => chamar<RegistroAuditoria[]>("listar_auditoria", { limite: 100 }),
 
+  obterDetalhesImpressora: (id: number) =>
+    chamar<DetalhesImpressora>("obter_detalhes_impressora", { id }),
   obterSaudeFrota: () => chamar<SaudeImpressora[]>("obter_saude_frota"),
   obterPrevisoes: () => chamar<PrevisaoItem[]>("obter_previsoes"),
   listarOrdensServico: () => chamar<OrdemServico[]>("listar_ordens_servico"),

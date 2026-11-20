@@ -6,7 +6,7 @@ use tauri::State;
 use crate::{
     erro::{AppError, AppResult},
     estado::AppState,
-    modelos::Impressora,
+    modelos::{DetalhesImpressora, Impressora},
     util::validacao::nao_vazio,
 };
 
@@ -37,6 +37,19 @@ pub fn listar_impressoras(state: State<'_, Arc<AppState>>) -> AppResult<Vec<Impr
     })?;
 
     linhas.map(|linha| linha.map_err(AppError::from)).collect()
+}
+
+/// Ficha técnica completa de uma impressora (RF-004).
+#[tauri::command]
+pub fn obter_detalhes_impressora(
+    state: State<'_, Arc<AppState>>,
+    id: i64,
+) -> AppResult<DetalhesImpressora> {
+    let conexao = state
+        .db
+        .lock()
+        .map_err(|_| AppError::Validacao("banco de dados indisponível".into()))?;
+    crate::servicos::servico_impressoras::obter_detalhes(&conexao, id)
 }
 
 /// Cadastra manualmente uma impressora (RF-002).

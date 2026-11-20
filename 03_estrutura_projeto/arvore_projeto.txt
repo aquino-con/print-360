@@ -104,7 +104,8 @@ print_360/
 │       │   ├── servico_usuarios.rs
 │       │   ├── servico_alertas.rs
 │       │   ├── servico_atividade.rs
-│       │   └── servico_auditoria.rs
+│       │   ├── servico_auditoria.rs
+│       │   └── servico_impressoras.rs
 │       ├── roteamento/                ← recursos avançados / M2
 │       │   ├── mod.rs
 │       │   ├── regra.rs

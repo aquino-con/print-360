@@ -9,6 +9,8 @@ interface EstadoApp {
   mensagem: string | null;
   notificar: (mensagem: string) => void;
   limparNotificacao: () => void;
+  impressoraSelecionadaId: number | null;
+  selecionarImpressora: (id: number | null) => void;
   centralAlertasAberta: boolean;
   abrirCentralAlertas: () => void;
   fecharCentralAlertas: () => void;
@@ -22,6 +24,8 @@ export const useAppStore = create<EstadoApp>((set) => ({
   mensagem: null,
   notificar: (mensagem) => set({ mensagem }),
   limparNotificacao: () => set({ mensagem: null }),
+  impressoraSelecionadaId: null,
+  selecionarImpressora: (id) => set({ impressoraSelecionadaId: id }),
   centralAlertasAberta: false,
   abrirCentralAlertas: () => set({ centralAlertasAberta: true }),
   fecharCentralAlertas: () => set({ centralAlertasAberta: false }),
